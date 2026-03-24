@@ -1,0 +1,60 @@
+[{
+  "id": 1,
+  "title": "FOCACCIA",
+  "ingredients": [
+    {
+      "name": "harina",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "levadura fresca",
+      "quantity": 25,
+      "unit": "g"
+    },
+    {
+      "name": "extracto de tomates",
+      "quantity": 1,
+      "unit": "cda"
+    },
+    {
+      "name": "aceite oliva extra virgen",
+      "quantity": 1,
+      "unit": "vaso"
+    },
+    {
+      "name": "agua",
+      "quantity": 300,
+      "unit": "cc"
+    },
+    {
+      "name": "tomates cherry",
+      "quantity": "12",
+      "unit": null
+    },
+    {
+      "name": "romero",
+      "quantity": 1,
+      "unit": "cdita"
+    },
+    {
+      "name": "sal gruesa",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "procedure": [
+    "Poner en un bowl la harina y la sal. Hacer un hueco en el centro y agregar la levadura fresca picada con el extracto de tomate. Sumar el agua ligeramente tibia y el aceite de oliva en el mismo hueco.",
+    "A continuación, mezclar todo lo anterior y amasar durante 10 minutos hasta tener una consistencia suave.",
+    "Reposar la masa en un recipiente y tapar con un repasador en un lugar cálido aproximadamente por 1 hora o hasta que su volumen sea el doble.",
+    "Amasar la masa con las palmas de las manos para desgasificarla haciendo presión. Aceitar un molde y poner la masa. Presionando con la yema de los dedos, cubrir los bordes del molde.",
+    "Ordenar los tomates cherry bien distribuidos en la superficie de la masa Añadir el romero, rociar con aceite de oliva y bañarla con un poco de sal gruesa. Dejar leudar por media hora aproximadamente.",
+    "Regular el horno a 220º luego de encendido.",
+    "Introducir la focaccia en el horno y hornear durante 30 minutos. Luego, servir al instante."
+  ],
+  "image": "../assets/images/recipes/focaccia.png",
+  "tags": ["bread", "italian", "quick"],
+  "servings": 2,
+  "prep_time_minutes": 10,
+  "cook_time_minutes": 15
+}]

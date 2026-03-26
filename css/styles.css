@@ -30,6 +30,32 @@ header {
     width: auto;
 }
 
+/* Recipe card image size (smaller than recipe page) */
+.recipe-card-image {
+    height: 120px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Recipe card layout - two columns */
+.recipe-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.recipe-card-content {
+    flex: 0;
+}
+
 /* Navigation links */
 header nav a {
     color: white;
@@ -98,6 +124,16 @@ main {
     overflow-y: auto;
     padding: 10px;
     box-sizing: border-box;
+}
+
+/* Recipe grid - center the recipe cards */
+.recipe-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 33%;
+    margin: 0 auto;
 }
 
 /* Footer */

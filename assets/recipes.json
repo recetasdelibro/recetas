@@ -131,5 +131,74 @@
   "servings": 2,
   "prep_time_minutes": 10,
   "cook_time_minutes": 15
+},
+{
+  "id": 3,
+  "title": "ENSALADA MEDITERRANEA",
+  "ingredients": [
+    {
+      "name": "sal entrefina",
+      "quantity": 1,
+      "unit": "cdita"
+    },
+    {
+      "name": "vinagre",
+      "quantity": 2,
+      "unit": "cdas"
+    },
+    {
+      "name": "aceite de oliva",
+      "quantity": 3,
+      "unit": "cdas"
+    },
+    {
+      "name": "jamón crudo",
+      "quantity": 200,
+      "unit": "g"
+    },
+    {
+      "name": "variedad de tomates",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "trenza de muzzarella",
+      "quantity": 1,
+      "unit": null
+    },
+    {
+      "name": "almendras",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "name": "hojas de albahaca",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "sal",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "pimienta",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "procedure": [
+    "Encender el horno y dejarlo hasta que levante 220º.",
+    "Hacer una vinagreta con sal, pimienta, vinagre y aceite de oliva. Mezclar y reservar.",
+    "Secar las fetas de jamón en el horno. Luego, dejarlas reposar afuera y aplastarlas hasta que queden trozadas.",
+    "En una fuente poner el tomate redondo cortado en fetas finas y tomates cherry, algunos enteros y otros cortados a la mitad. Colocar la muzzarella entera en el medio.",
+    "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
+    "Finalizar con almendras picadas y las hojas de albahaca para decorar."
+  ],
+  "image": "../assets/images/recipes/ensalada_mediterranea.png",
+  "tags": ["ensalada", "italiano", "tomate"],
+  "servings": 2,
+  "prep_time_minutes": 10,
+  "cook_time_minutes": 15
 }
 ]

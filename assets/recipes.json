@@ -29,7 +29,7 @@
     },
     {
       "name": "tomates cherry",
-      "quantity": "12",
+      "quantity": 12,
       "unit": null
     },
     {
@@ -57,4 +57,79 @@
   "servings": 2,
   "prep_time_minutes": 10,
   "cook_time_minutes": 15
-}]
+},
+{
+  "id": 2,
+  "title": "BRUSCHETTA",
+  "ingredients": [
+    {
+      "name": "ricota cremosa",
+      "quantity": 6,
+      "unit": "cdas"
+    },
+    {
+      "name": "ralladura de limón",
+      "quantity": "1/2",
+      "unit": null
+    },
+    {
+      "name": "tostadas de pan integral",
+      "quantity": 6,
+      "unit": null
+    },
+    {
+      "name": "tomates redondos",
+      "quantity": 2,
+      "unit": null
+    },
+    {
+      "name": "azucar",
+      "quantity": 1,
+      "unit": "cda"
+    },
+    {
+      "name": "tomates cherry",
+      "quantity": 18,
+      "unit": null
+    },
+    {
+      "name": "romero",
+      "quantity": 1,
+      "unit": null
+    },
+    {
+      "name": "cebolla de verdeo",
+      "quantity": 2,
+      "unit": null
+    },
+    {
+      "name": "aceite de oliva",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "sal",
+      "quantity": null,
+      "unit": null
+    },
+    {
+      "name": "pimienta",
+      "quantity": null,
+      "unit": null
+    }
+  ],
+  "procedure": [
+    "Dentro de un bowl, poner la ricota y salpimentarla. Agregar un chorrito de aceite de oliva, echar la ralladura de limón y mezclar.",
+    "Colocar la ricota encima de las tostadas y esparcir.",
+    "Dorar en una sartén los tomates en rodajas con un poco de aceite de oliva. Echar azucar mientras se doran.",
+    "Incrustar las ramitas de romero en los tomates cherry, como una brochette. Dorarlos con aceite de oliva.",
+    "Limpiar con agua el bulbo de la cebolla de verdeo eliminando restos de tierra. Picarla en trozos pequeños.",
+    "Colocar sobre la ricota los cherry y los redondos. Espolvorear con la cebolla de verdeo picada y servir."
+  ],
+  "image": "../assets/images/recipes/bruschetta.jfif",
+  "tags": ["pan", "italiano", "tomate"],
+  "servings": 2,
+  "prep_time_minutes": 10,
+  "cook_time_minutes": 15
+}
+]

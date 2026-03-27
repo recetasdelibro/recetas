@@ -200,5 +200,93 @@
   "servings": 2,
   "prep_time_minutes": 10,
   "cook_time_minutes": 15
-}
+},
+{
+  "id": 4,
+  "title": "FRESAS CONFITADAS CON VINAGRE BALSÁMICO",
+  "ingredients": [
+    {
+      "name": "fresas",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "name": "azucar",
+      "quantity": 80,
+      "unit": "g"
+    },
+    {
+      "name": "agua",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "vinagre balsámico",
+      "quantity": 2,
+      "unit": "cdas"
+    }
+  ],
+  "procedure": [
+    "Encender el horno y dejarlo hasta que levante 220º.",
+    "Hacer una vinagreta con sal, pimienta, vinagre y aceite de oliva. Mezclar y reservar.",
+    "Secar las fetas de jamón en el horno. Luego, dejarlas reposar afuera y aplastarlas hasta que queden trozadas.",
+    "En una fuente poner el tomate redondo cortado en fetas finas y tomates cherry, algunos enteros y otros cortados a la mitad. Colocar la muzzarella entera en el medio.",
+    "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
+    "Finalizar con almendras picadas y las hojas de albahaca para decorar."
+  ],
+  "image": "../assets/images/recipes/fresas_balsamico.jpg",
+  "tags": ["postre", "italiano", "frutillas"],
+  "servings": 2,
+  "prep_time_minutes": 10,
+  "cook_time_minutes": 15
+},
+  {
+    "id": 5,
+    "title": "FLAN DE PIÑA",
+    "ingredients": [
+      {
+        "name": "leche",
+        "quantity": 750,
+        "unit": "ml"
+      },
+      {
+        "name": "huevos enteros",
+        "quantity": 3,
+        "unit": null
+      },
+      {
+        "name": "yemas",
+        "quantity": 10,
+        "unit": null
+      },
+      {
+        "name": "azucar en polvo",
+        "quantity": 400,
+        "unit": "g"
+      },
+      {
+        "name": "jugo de piña",
+        "quantity": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "rodajas de piña",
+        "quantity": 2,
+        "unit": null
+      }
+    ],
+    "procedure": [
+      "Encender el horno y dejarlo hasta que levante 220º.",
+      "Hacer una vinagreta con sal, pimienta, vinagre y aceite de oliva. Mezclar y reservar.",
+      "Secar las fetas de jamón en el horno. Luego, dejarlas reposar afuera y aplastarlas hasta que queden trozadas.",
+      "En una fuente poner el tomate redondo cortado en fetas finas y tomates cherry, algunos enteros y otros cortados a la mitad. Colocar la muzzarella entera en el medio.",
+      "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
+      "Finalizar con almendras picadas y las hojas de albahaca para decorar."
+    ],
+    "image": "../assets/images/recipes/flan_anana.jfif",
+    "tags": ["postre", "caribe", "piña"],
+    "servings": 2,
+    "prep_time_minutes": 10,
+    "cook_time_minutes": 15
+  }
 ]

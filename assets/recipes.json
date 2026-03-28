@@ -52,7 +52,7 @@
     "Regular el horno a 220º luego de encendido.",
     "Introducir la focaccia en el horno y hornear durante 30 minutos. Luego, servir al instante."
   ],
-  "image": "../assets/images/recipes/focaccia.png",
+  "image": "/recetas/assets/images/recipes/focaccia.png",
   "tags": ["pan", "italiano", "tomate"],
   "servings": 2,
   "prep_time_minutes": 10,
@@ -126,7 +126,7 @@
     "Limpiar con agua el bulbo de la cebolla de verdeo eliminando restos de tierra. Picarla en trozos pequeños.",
     "Colocar sobre la ricota los cherry y los redondos. Espolvorear con la cebolla de verdeo picada y servir."
   ],
-  "image": "../assets/images/recipes/bruschetta.jfif",
+  "image": "/recetas/assets/images/recipes/bruschetta.jfif",
   "tags": ["pan", "italiano", "tomate"],
   "servings": 2,
   "prep_time_minutes": 10,
@@ -195,7 +195,7 @@
     "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
     "Finalizar con almendras picadas y las hojas de albahaca para decorar."
   ],
-  "image": "../assets/images/recipes/ensalada_mediterranea.png",
+  "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
   "tags": ["ensalada", "italiano", "tomate"],
   "servings": 2,
   "prep_time_minutes": 10,
@@ -234,7 +234,7 @@
     "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
     "Finalizar con almendras picadas y las hojas de albahaca para decorar."
   ],
-  "image": "../assets/images/recipes/fresas_balsamico.jpg",
+  "image": "/recetas/assets/images/recipes/fresas_balsamico.jpg",
   "tags": ["postre", "italiano", "frutillas"],
   "servings": 2,
   "prep_time_minutes": 10,
@@ -283,7 +283,7 @@
       "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
       "Finalizar con almendras picadas y las hojas de albahaca para decorar."
     ],
-    "image": "../assets/images/recipes/flan_anana.jfif",
+    "image": "/recetas/assets/images/recipes/flan_anana.jfif",
     "tags": ["postre", "caribe", "piña"],
     "servings": 2,
     "prep_time_minutes": 10,

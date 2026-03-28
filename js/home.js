@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('assets/recipes.json');
+        const response = await fetch('/recetas/assets/recipes.json');
         const recipes = await response.json();
 
         // Función para obtener N elementos aleatorios

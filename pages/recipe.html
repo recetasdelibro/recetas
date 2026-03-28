@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <script src="../js/search.js"></script>
+<script src="../js/category.js"></script>
 <script src="../js/recipe.js"></script>
 <head>
     <meta charset="UTF-8">
@@ -19,6 +20,13 @@
         <input type="text" id="search-input" placeholder="Buscar...">
         <button id="search-btn">Buscar</button>
         <button id="filter-btn">Filtros</button>
+        <div class="dropdown">
+            <button id="category-btn" class="dropbtn">Categorías</button>
+            <div id="category-dropdown" class="dropdown-content">
+                <a href="#" data-category="entradas">Entradas</a>
+                <a href="#" data-category="postres">Postres</a>
+            </div>
+        </div>
     </div>
 
     <nav>

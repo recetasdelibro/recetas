@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         const params = new URLSearchParams(window.location.search);
         const searchTerm = params.get('search')?.toLowerCase() || "";
+        const category = params.get('category')?.toLowerCase() || "";
 
         // Get current page to determine which functionality to use
         const currentPage = window.location.pathname;
@@ -11,21 +12,47 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch('/recetas/assets/recipes.json');
         const recipes = await response.json();
 
+        // Category filtering function
+        const filterByCategory = (recipe, category) => {
+            if (!category) return true;
+            
+            if (category === 'entradas') {
+                return recipe.tags && recipe.tags.some(tag => 
+                    tag.toLowerCase().includes('entrada') || 
+                    tag.toLowerCase().includes('aperitivo') ||
+                    tag.toLowerCase().includes('pan') ||
+                    tag.toLowerCase().includes('ensalada')
+                );
+            } else if (category === 'postres') {
+                return recipe.tags && recipe.tags.some(tag => 
+                    tag.toLowerCase().includes('postre') ||
+                    tag.toLowerCase().includes('dulce')
+                );
+            }
+            return true;
+        };
+
+        // Search filtering function
+        const filterBySearch = (recipe, searchTerm) => {
+            if (searchTerm.length < 3) return true;
+            
+            const titleMatch = recipe.title.toLowerCase().includes(searchTerm);
+            const ingredientMatch = recipe.ingredients.some(i =>
+                i.name.toLowerCase().includes(searchTerm)
+            );
+            return titleMatch || ingredientMatch;
+        };
+
         if (isRecipeListPage) {
             // RECIPE LIST PAGE - Fill recipe-grid with filtered results
             const recipeGrid = document.getElementById('recipe-grid');
             const messageBox = document.getElementById('no-results-message');
 
-            // Filter recipes based on search term (minimum 3 letters)
+            // Filter recipes using separated functions
             const filteredRecipes = recipes.filter(r => {
-                // If search term has less than 3 letters, show all recipes
-                if (searchTerm.length < 3) return true;
-
-                const titleMatch = r.title.toLowerCase().includes(searchTerm);
-                const ingredientMatch = r.ingredients.some(i =>
-                    i.name.toLowerCase().includes(searchTerm)
-                );
-                return titleMatch || ingredientMatch;
+                const categoryMatch = filterByCategory(r, category);
+                const searchMatch = filterBySearch(r, searchTerm);
+                return categoryMatch && searchMatch;
             });
 
             // Display results
@@ -42,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 `).join('');
             } else {
                 recipeGrid.innerHTML = '';
-                messageBox.textContent = searchTerm 
-                    ? `No se encontraron recetas para "${searchTerm}"`
+                messageBox.textContent = category || searchTerm 
+                    ? `No se encontraron recetas${category ? ` para la categoría "${category}"` : ''}${searchTerm && category ? ' ' : ''}${searchTerm ? `con "${searchTerm}"` : ''}`
                     : 'No se encontraron recetas.';
                 messageBox.style.display = 'block';
             }
@@ -54,11 +81,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             const messageBox = document.getElementById('no-results-message');
 
             const recipe = recipes.find(r => {
-                const titleMatch = r.title.toLowerCase().includes(searchTerm);
-                const ingredientMatch = r.ingredients.some(i =>
-                    i.name.toLowerCase().includes(searchTerm)
-                );
-                return titleMatch || (searchTerm && ingredientMatch);
+                const categoryMatch = filterByCategory(r, category);
+                const searchMatch = filterBySearch(r, searchTerm);
+                return categoryMatch && searchMatch;
             });
 
             if (recipe) {

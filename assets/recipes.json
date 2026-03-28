@@ -53,7 +53,7 @@
     "Introducir la focaccia en el horno y hornear durante 30 minutos. Luego, servir al instante."
   ],
   "image": "/recetas/assets/images/recipes/focaccia.png",
-  "tags": ["pan", "italiano", "tomate"],
+  "tags": ["pan", "italiano", "tomate" ],
   "servings": 2,
   "prep_time_minutes": 10,
   "cook_time_minutes": 15

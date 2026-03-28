@@ -202,6 +202,13 @@ main {
     margin: 0 auto;
 }
 
+/* Procedure content width limitation */
+.procedure {
+    max-width: 50vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 /* Footer */
 footer {
     background-color: #28cc5f;

@@ -29,8 +29,7 @@
     },
     {
       "name": "tomates cherry",
-      "quantity": 12,
-      "unit": null
+      "quantity": 12
     },
     {
       "name": "romero",
@@ -38,9 +37,7 @@
       "unit": "cdita"
     },
     {
-      "name": "sal gruesa",
-      "quantity": null,
-      "unit": null
+      "name": "sal gruesa"
     }
   ],
   "procedure": [
@@ -53,10 +50,7 @@
     "Introducir la focaccia en el horno y hornear durante 30 minutos. Luego, servir al instante."
   ],
   "image": "/recetas/assets/images/recipes/focaccia.png",
-  "tags": ["pan", "italiano", "tomate" ],
-  "servings": 2,
-  "prep_time_minutes": 10,
-  "cook_time_minutes": 15
+  "tags": ["pan", "italiano", "tomate"]
 },
 {
   "id": 2,
@@ -69,18 +63,15 @@
     },
     {
       "name": "ralladura de limón",
-      "quantity": "1/2",
-      "unit": null
+      "quantity": "1/2"
     },
     {
       "name": "tostadas de pan integral",
-      "quantity": 6,
-      "unit": null
+      "quantity": 6
     },
     {
       "name": "tomates redondos",
-      "quantity": 2,
-      "unit": null
+      "quantity": 2
     },
     {
       "name": "azucar",
@@ -89,33 +80,24 @@
     },
     {
       "name": "tomates cherry",
-      "quantity": 18,
-      "unit": null
+      "quantity": 18
     },
     {
       "name": "romero",
-      "quantity": 1,
-      "unit": null
+      "quantity": 1
     },
     {
       "name": "cebolla de verdeo",
-      "quantity": 2,
-      "unit": null
+      "quantity": 2
     },
     {
-      "name": "aceite de oliva",
-      "quantity": null,
-      "unit": null
+      "name": "aceite de oliva"
     },
     {
-      "name": "sal",
-      "quantity": null,
-      "unit": null
+      "name": "sal"
     },
     {
-      "name": "pimienta",
-      "quantity": null,
-      "unit": null
+      "name": "pimienta"
     }
   ],
   "procedure": [
@@ -127,10 +109,7 @@
     "Colocar sobre la ricota los cherry y los redondos. Espolvorear con la cebolla de verdeo picada y servir."
   ],
   "image": "/recetas/assets/images/recipes/bruschetta.jfif",
-  "tags": ["pan", "italiano", "tomate"],
-  "servings": 2,
-  "prep_time_minutes": 10,
-  "cook_time_minutes": 15
+  "tags": ["pan", "italiano", "tomate"]
 },
 {
   "id": 3,
@@ -163,8 +142,7 @@
     },
     {
       "name": "trenza de muzzarella",
-      "quantity": 1,
-      "unit": null
+      "quantity": 1
     },
     {
       "name": "almendras",
@@ -172,19 +150,13 @@
       "unit": "g"
     },
     {
-      "name": "hojas de albahaca",
-      "quantity": null,
-      "unit": null
+      "name": "hojas de albahaca"
     },
     {
-      "name": "sal",
-      "quantity": null,
-      "unit": null
+      "name": "sal"
     },
     {
-      "name": "pimienta",
-      "quantity": null,
-      "unit": null
+      "name": "pimienta"
     }
   ],
   "procedure": [
@@ -196,10 +168,7 @@
     "Finalizar con almendras picadas y las hojas de albahaca para decorar."
   ],
   "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
-  "tags": ["ensalada", "italiano", "tomate"],
-  "servings": 2,
-  "prep_time_minutes": 10,
-  "cook_time_minutes": 15
+  "tags": ["ensalada", "italiano", "tomate"]
 },
 {
   "id": 4,
@@ -227,66 +196,55 @@
     }
   ],
   "procedure": [
-    "Encender el horno y dejarlo hasta que levante 220º.",
-    "Hacer una vinagreta con sal, pimienta, vinagre y aceite de oliva. Mezclar y reservar.",
-    "Secar las fetas de jamón en el horno. Luego, dejarlas reposar afuera y aplastarlas hasta que queden trozadas.",
-    "En una fuente poner el tomate redondo cortado en fetas finas y tomates cherry, algunos enteros y otros cortados a la mitad. Colocar la muzzarella entera en el medio.",
-    "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
-    "Finalizar con almendras picadas y las hojas de albahaca para decorar."
+    "Escurra las fresas con agua fría. Retire las hojas y la raíz. Depende de lo grande que sean, partirlas a la mitad o dejarlas enteras.",
+    "En una olla, colocar 100 ml de agua con el azúcar, revolver a fuego lento hasta que quede disuelta. Para que quede el almíbar, llevar a ebullición y dejarlo 2 minutos a fuego lento. Dejar enfriar.",
+    "Mezclar con el vinagre balsámico. Dejar a fuego vivo y echar las fresas. Cuando rompa el hervor, retirar y dejar enfriar.",
+    "Colocar las fresas en copas y bañar con el almíbar. Dejar en el freezer.",
+    "Servir frío. Queda ideal acompañado de helado de crema americana."
   ],
   "image": "/recetas/assets/images/recipes/fresas_balsamico.jpg",
-  "tags": ["postre", "italiano", "frutillas"],
-  "servings": 2,
-  "prep_time_minutes": 10,
-  "cook_time_minutes": 15
+  "tags": ["postre", "italiano", "frutillas", "fresas"]
 },
-  {
-    "id": 5,
-    "title": "FLAN DE PIÑA",
-    "ingredients": [
-      {
-        "name": "leche",
-        "quantity": 750,
-        "unit": "ml"
-      },
-      {
-        "name": "huevos enteros",
-        "quantity": 3,
-        "unit": null
-      },
-      {
-        "name": "yemas",
-        "quantity": 10,
-        "unit": null
-      },
-      {
-        "name": "azucar en polvo",
-        "quantity": 400,
-        "unit": "g"
-      },
-      {
-        "name": "jugo de piña",
-        "quantity": 250,
-        "unit": "ml"
-      },
-      {
-        "name": "rodajas de piña",
-        "quantity": 2,
-        "unit": null
-      }
-    ],
-    "procedure": [
-      "Encender el horno y dejarlo hasta que levante 220º.",
-      "Hacer una vinagreta con sal, pimienta, vinagre y aceite de oliva. Mezclar y reservar.",
-      "Secar las fetas de jamón en el horno. Luego, dejarlas reposar afuera y aplastarlas hasta que queden trozadas.",
-      "En una fuente poner el tomate redondo cortado en fetas finas y tomates cherry, algunos enteros y otros cortados a la mitad. Colocar la muzzarella entera en el medio.",
-      "Salpimentar y tirar un chorro de vinagreta. Esparcir el jamón en trozos.",
-      "Finalizar con almendras picadas y las hojas de albahaca para decorar."
-    ],
-    "image": "/recetas/assets/images/recipes/flan_anana.jfif",
-    "tags": ["postre", "caribe", "piña"],
-    "servings": 2,
-    "prep_time_minutes": 10,
-    "cook_time_minutes": 15
-  }
-]
+{
+  "id": 5,
+  "title": "FLAN DE PIÑA",
+  "ingredients": [
+    {
+      "name": "leche",
+      "quantity": 750,
+      "unit": "ml"
+    },
+    {
+      "name": "huevos enteros",
+      "quantity": 3
+    },
+    {
+      "name": "yemas",
+      "quantity": 10
+    },
+    {
+      "name": "azucar en polvo",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "name": "jugo de piña",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "rodajas de piña",
+      "quantity": 2
+    }
+  ],
+  "procedure": [
+    "Colocar la leche en una olla. Llevar a ebullición y enfriar. Romper los huevos enteros y en un bowl mezclarlos con las yemas, batir. Sumar 300g de azúcar mientras se bate hasta quedar espuma. Agregar de a poco la leche, luego el jugo de piña, sin dejar de batir. Debe quedar una crema.",
+    "Precalentar el horno a 180º.",
+    "Colocar en una olla el resto del azúcar y 6 cucharadas de agua para hacer el caramelo. Llevar a ebulición hasta que tome color marrón claro o dorado. Untarlo en una flanera o similar por la base y los bordes.",
+    "Echar la crema en la flanera y colocarla dentro de un molde más grande para hacerlo a baño maría, llenandolo de agua hasta la mitad. Hornear durante una hora. Usar un palillo para pinchar y ver que salga limpio después de la cocción.",
+    "Retirar el flan del horno y dejar enfriar. Desmoldar en una fuente y colocar por encima las rodajas de piña cortadas de a cuartos.",
+    "Tip: se puede decorar con cerezas confitadas, tallos de angélica u hojas de menta fresca."
+  ],
+  "image": "/recetas/assets/images/recipes/flan_anana.jfif",
+  "tags": ["postre", "caribe", "piña", "anana"]
+}]

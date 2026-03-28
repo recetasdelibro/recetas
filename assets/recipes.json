@@ -247,4 +247,63 @@
   ],
   "image": "/recetas/assets/images/recipes/flan_anana.jfif",
   "tags": ["postre", "caribe", "piña", "anana"]
+},
+{
+  "id": 6,
+  "title": "PLÁTANOS SALTEADOS CON LECHE DE COCO",
+  "ingredients": [
+    {
+      "name": "limón verde",
+      "quantity": "1/2"
+    },
+    {
+      "name": "azúcar en polvo",
+      "quantity": 2,
+      "unit": "cdas"
+    },
+    {
+      "name": "plátanos",
+      "quantity": 4
+    },
+    {
+      "name": "mantequilla",
+      "quantity": 30,
+      "unit": "g"
+    },
+    {
+      "name": "miel líquida",
+      "quantity": 1,
+      "unit": "cda"
+    },
+    {
+      "name": "leche de coco",
+      "quantity": 6,
+      "unit": "cdas"
+    },
+    {
+      "name": "jengibre en polvo",
+      "quantity": "1/2",
+      "unit": "cdita"
+    },
+    {
+      "name": "canela en polvo",
+      "quantity": "1",
+      "unit": "cdita"
+    },
+    {
+      "name": "coco rallado ( opcional )",
+      "quantity": "2",
+      "unit": "cdas"
+    }
+  ],
+  "procedure": [
+    "Colocar la leche en una olla. Llevar a ebullición y enfriar. Romper los huevos enteros y en un bowl mezclarlos con las yemas, batir. Sumar 300g de azúcar mientras se bate hasta quedar espuma. Agregar de a poco la leche, luego el jugo de piña, sin dejar de batir. Debe quedar una crema.",
+    "Precalentar el horno a 180º.",
+    "Colocar en una olla el resto del azúcar y 6 cucharadas de agua para hacer el caramelo. Llevar a ebulición hasta que tome color marrón claro o dorado. Untarlo en una flanera o similar por la base y los bordes.",
+    "Echar la crema en la flanera y colocarla dentro de un molde más grande para hacerlo a baño maría, llenandolo de agua hasta la mitad. Hornear durante una hora. Usar un palillo para pinchar y ver que salga limpio después de la cocción.",
+    "Retirar el flan del horno y dejar enfriar. Desmoldar en una fuente y colocar por encima las rodajas de piña cortadas de a cuartos.",
+    "Tip: se puede decorar con cerezas confitadas, tallos de angélica u hojas de menta fresca."
+  ],
+  "image": "/recetas/assets/images/recipes/platano_leche_coco.jfif",
+  "tags": ["postre", "caribe", "piña", "anana"]
 }]

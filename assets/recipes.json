@@ -297,13 +297,159 @@
     }
   ],
   "procedure": [
-    "Colocar la leche en una olla. Llevar a ebullición y enfriar. Romper los huevos enteros y en un bowl mezclarlos con las yemas, batir. Sumar 300g de azúcar mientras se bate hasta quedar espuma. Agregar de a poco la leche, luego el jugo de piña, sin dejar de batir. Debe quedar una crema.",
-    "Precalentar el horno a 180º.",
-    "Colocar en una olla el resto del azúcar y 6 cucharadas de agua para hacer el caramelo. Llevar a ebulición hasta que tome color marrón claro o dorado. Untarlo en una flanera o similar por la base y los bordes.",
-    "Echar la crema en la flanera y colocarla dentro de un molde más grande para hacerlo a baño maría, llenandolo de agua hasta la mitad. Hornear durante una hora. Usar un palillo para pinchar y ver que salga limpio después de la cocción.",
-    "Retirar el flan del horno y dejar enfriar. Desmoldar en una fuente y colocar por encima las rodajas de piña cortadas de a cuartos.",
-    "Tip: se puede decorar con cerezas confitadas, tallos de angélica u hojas de menta fresca."
+    "Cortar la cáscara del limón en tiras finas. Exprimir el limón y conservar el jugo. Hervir en una olla por 5 minutos la cáscaara de limón con un poco de agua y escurrir. Colocar 100 ml de agua con el azúcar en la olla, hervir a fuego lento mientras revuelve, hasta disolver el azúcar. Agregar la corteza de limón y bajar a fuego lento por 5 minutos. Escurrir y reservar.",
+    "Pelar y remover todos los hilos blancos de los plátanos. Rebanarlos a lo largo por el medio. Derretir la mantequilla en una sartén. Cocer los platanos cortados boca abajo hasta dorarlas, aproximadamente 5 min, dando vuelta una o dos veces.",
+    "Luego precalentar una fuente. Colocar los plátanos en la fuente.",
+    "Con la sartén en el fuego, sumar la miel y la leche de coco, el jugo de limón y las especias. Mezclar todo a fuego vivo por unos minutos hasta que gane espesor.",
+    "Servir los plátanos y cubrir con la salsa y echar coco rallado por encima. Decorar con las tiras de corteza delimón y servir.",
+    "Tip: se puede acompañar con helado de coco."
   ],
   "image": "/recetas/assets/images/recipes/platano_leche_coco.jfif",
   "tags": ["postre", "caribe", "piña", "anana"]
+},
+{
+  "id": 7,
+  "title": "VITEL TONÉ",
+  "ingredients": [
+    {
+      "name": "peceto",
+      "quantity": 1.5,
+      "unit": "kg"
+    },
+    {
+      "name": "agua",
+      "quantity": 2,
+      "unit": "l"
+    },
+    {
+      "name": "cubitos de carne",
+      "quantity": 4
+    },
+    {
+      "name": "hoja laurel",
+      "quantity": 1
+    },
+    {
+      "name": "tallo apio",
+      "quantity": 2
+    },
+    {
+      "name": "zanahoria",
+      "quantity": 1
+    },
+    {
+      "name": "mayonesa",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "name": "queso crema",
+      "quantity": 240,
+      "unit": "g"
+    },
+    {
+      "name": "jugo limón",
+      "quantity": 2,
+      "unit": "cdas"
+    },
+    {
+      "name": "filete anchoa",
+      "quantity": 5
+    },
+    {
+      "name": "lata atún natural",
+      "quantity": 2
+    },
+    {
+      "name": "crema de leche",
+      "quantity": 100,
+      "unit": "ml"
+    },
+    {
+      "name": "caldo de cocción"
+    },
+    {
+      "name": "huevos duros",
+      "quantity": 2
+    },
+    {
+      "name": "alcaparras",
+      "quantity": 3,
+      "unit": "cdas"
+    }
+ ],
+  "procedure": [
+    "Limpiar el peceto. Llenar con el agua una olla con las verduras y el laurel. Al hervir echar los cubitos de carne y el peceto, cocinar aproximadamente 1 hora. Luego pagar el fuego y dejar enfriar.",
+    "Poner para licuar la mayonesa, el queso crema, el atún escurrido, las anchoas, la crema de leche y algo de caldo de la cocción, lucar hasta que quede una salsa. Salpimentar.",
+    "Cortar el peceto en filetes finos, colocar en una fuente y cubrir con la salsa. Decorar con yemas de huevo duro ralladas y alcaparras."
+ ],
+  "image": "/recetas/assets/images/recipes/vitel_tone.jpg",
+  "tags": ["principal", "carne", "peceto", "argentina"]
+},
+{
+  "id": 8,
+  "title": "PIZZA CLÁSICA",
+  "ingredients": [
+    {
+      "name": "levadura fresca",
+      "quantity": 50,
+      "unit": "g"
+    },
+    {
+      "name": "agua tibia",
+      "quantity": "1/2",
+      "unit": "taza"
+    },
+    {
+      "name": "azúcar",
+      "quantity": 1,
+      "unit": "cdita"
+    },
+    {
+      "name": "harina",
+      "quantity": 4,
+      "unit": "tazas"
+    },
+    {
+      "name": "aceite",
+      "quantity": 3,
+      "unit": "cdas"
+    },
+    {
+      "name": "sal",
+      "quantity": 1,
+      "unit": "cda"
+    },
+    {
+      "name": "leche tibia",
+      "quantity": "1/2",
+      "unit": "taza"
+    },
+    {
+      "name": "salsa de tomate"
+    },
+    {
+      "name": "muzzarella"
+    },
+    {
+      "name": "aceitunas"
+    },
+    {
+      "name": "orégano"
+    }
+  ],
+  "procedure": [
+    "Disolver la levadura en el agua tibia junto al azúcar. Sumar una cucharada de harina y mezclar hasta obtener un engrudo. Tapar con un repasador y dejar leudar hasta que se infle. Pero que no desborde.",
+    "Formar un anillo con el resto de la harina. Hacer un hueco en el centro. Colocar el aceite, la sal y el engrudo.",
+    "Unir con un poco de leche tibia hasta que quede un bollo tierno pero que apenas de quede pegado.",
+    "Enharinar la mesa y estrellar el bollo.",
+    "Colocar un poco de harina  en las manos, darle forma al bollo y pintar con un poco de aciete arriba. Dejar reposar tapado en un lugar tibio hasta duplicar el volumen.",
+    "Tomar un trozo de masa leudada y estirarla con un palo o a mano para darle forma circular. Haciendola finita o gruesa. Que entre en una pizzera aceitada previamente.",
+    "Con la punta de los dedos aceitados estirar bien para que ocupe toda la pizzera",
+    "Tapar y dejar leudar en un sitio tibio.",
+    "Pincelar con la salsa de tomate y cocinar colocando la pizerra en el piso del horno bien caliente hasta dorar la base.",
+    "Humedecer trozos de muzzarella en agua para ayudar a que se derrita mejor. Luego colocar la muzzarella y llevar al medio del horno hasta que se derrita. Decorar con las aceitunas."
+  ],
+  "image": "/recetas/assets/images/recipes/pizza_clasica.jpg",
+  "tags": ["principal", "pizza", "italiana"]
 }]

@@ -19,14 +19,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (category === 'entradas') {
                 return recipe.tags && recipe.tags.some(tag => 
                     tag.toLowerCase().includes('entrada') || 
-                    tag.toLowerCase().includes('aperitivo') ||
                     tag.toLowerCase().includes('pan') ||
                     tag.toLowerCase().includes('ensalada')
                 );
             } else if (category === 'postres') {
                 return recipe.tags && recipe.tags.some(tag => 
-                    tag.toLowerCase().includes('postre') ||
-                    tag.toLowerCase().includes('dulce')
+                    tag.toLowerCase().includes('postre')
+                );
+            } else if (category === 'principales') {
+                return recipe.tags && recipe.tags.some(tag =>
+                    tag.toLowerCase().includes('principal')
                 );
             }
             return true;

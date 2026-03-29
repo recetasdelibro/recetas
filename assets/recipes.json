@@ -197,7 +197,7 @@
   ],
   "procedure": [
     "Escurra las fresas con agua fría. Retire las hojas y la raíz. Depende de lo grande que sean, partirlas a la mitad o dejarlas enteras.",
-    "En una olla, colocar 100 ml de agua con el azúcar, revolver a fuego lento hasta que quede disuelta. Para que quede el almíbar, llevar a ebullición y dejarlo 2 minutos a fuego lento. Dejar enfriar.",
+    "En una cacerola, colocar 100 ml de agua con el azúcar, revolver a fuego lento hasta que quede disuelta. Para que quede el almíbar, llevar a ebullición y dejarlo 2 minutos a fuego lento. Dejar enfriar.",
     "Mezclar con el vinagre balsámico. Dejar a fuego vivo y echar las fresas. Cuando rompa el hervor, retirar y dejar enfriar.",
     "Colocar las fresas en copas y bañar con el almíbar. Dejar en el freezer.",
     "Servir frío. Queda ideal acompañado de helado de crema americana."
@@ -238,9 +238,9 @@
     }
   ],
   "procedure": [
-    "Colocar la leche en una olla. Llevar a ebullición y enfriar. Romper los huevos enteros y en un bowl mezclarlos con las yemas, batir. Sumar 300g de azúcar mientras se bate hasta quedar espuma. Agregar de a poco la leche, luego el jugo de piña, sin dejar de batir. Debe quedar una crema.",
+    "Colocar la leche en una cacerola. Llevar a ebullición y enfriar. Romper los huevos enteros y en un bowl mezclarlos con las yemas, batir. Sumar 300g de azúcar mientras se bate hasta quedar espuma. Agregar de a poco la leche, luego el jugo de piña, sin dejar de batir. Debe quedar una crema.",
     "Precalentar el horno a 180º.",
-    "Colocar en una olla el resto del azúcar y 6 cucharadas de agua para hacer el caramelo. Llevar a ebulición hasta que tome color marrón claro o dorado. Untarlo en una flanera o similar por la base y los bordes.",
+    "Colocar en una cacerola el resto del azúcar y 6 cucharadas de agua para hacer el caramelo. Llevar a ebulición hasta que tome color marrón claro o dorado. Untarlo en una flanera o similar por la base y los bordes.",
     "Echar la crema en la flanera y colocarla dentro de un molde más grande para hacerlo a baño maría, llenandolo de agua hasta la mitad. Hornear durante una hora. Usar un palillo para pinchar y ver que salga limpio después de la cocción.",
     "Retirar el flan del horno y dejar enfriar. Desmoldar en una fuente y colocar por encima las rodajas de piña cortadas de a cuartos.",
     "Tip: se puede decorar con cerezas confitadas, tallos de angélica u hojas de menta fresca."
@@ -297,7 +297,7 @@
     }
   ],
   "procedure": [
-    "Cortar la cáscara del limón en tiras finas. Exprimir el limón y conservar el jugo. Hervir en una olla por 5 minutos la cáscaara de limón con un poco de agua y escurrir. Colocar 100 ml de agua con el azúcar en la olla, hervir a fuego lento mientras revuelve, hasta disolver el azúcar. Agregar la corteza de limón y bajar a fuego lento por 5 minutos. Escurrir y reservar.",
+    "Cortar la cáscara del limón en tiras finas. Exprimir el limón y conservar el jugo. Hervir en una cacerola por 5 minutos la cáscaara de limón con un poco de agua y escurrir. Colocar 100 ml de agua con el azúcar en la cacerola, hervir a fuego lento mientras revuelve, hasta disolver el azúcar. Agregar la corteza de limón y bajar a fuego lento por 5 minutos. Escurrir y reservar.",
     "Pelar y remover todos los hilos blancos de los plátanos. Rebanarlos a lo largo por el medio. Derretir la mantequilla en una sartén. Cocer los platanos cortados boca abajo hasta dorarlas, aproximadamente 5 min, dando vuelta una o dos veces.",
     "Luego precalentar una fuente. Colocar los plátanos en la fuente.",
     "Con la sartén en el fuego, sumar la miel y la leche de coco, el jugo de limón y las especias. Mezclar todo a fuego vivo por unos minutos hasta que gane espesor.",
@@ -379,7 +379,7 @@
     }
  ],
   "procedure": [
-    "Limpiar el peceto. Llenar con el agua una olla con las verduras y el laurel. Al hervir echar los cubitos de carne y el peceto, cocinar aproximadamente 1 hora. Luego pagar el fuego y dejar enfriar.",
+    "Limpiar el peceto. Llenar con el agua una cacerola con las verduras y el laurel. Al hervir echar los cubitos de carne y el peceto, cocinar aproximadamente 1 hora. Luego pagar el fuego y dejar enfriar.",
     "Poner para licuar la mayonesa, el queso crema, el atún escurrido, las anchoas, la crema de leche y algo de caldo de la cocción, lucar hasta que quede una salsa. Salpimentar.",
     "Cortar el peceto en filetes finos, colocar en una fuente y cubrir con la salsa. Decorar con yemas de huevo duro ralladas y alcaparras."
  ],
@@ -445,11 +445,142 @@
     "Enharinar la mesa y estrellar el bollo.",
     "Colocar un poco de harina  en las manos, darle forma al bollo y pintar con un poco de aciete arriba. Dejar reposar tapado en un lugar tibio hasta duplicar el volumen.",
     "Tomar un trozo de masa leudada y estirarla con un palo o a mano para darle forma circular. Haciendola finita o gruesa. Que entre en una pizzera aceitada previamente.",
-    "Con la punta de los dedos aceitados estirar bien para que ocupe toda la pizzera",
+    "Con la punta de los dedos aceitados estirar bien para que ocupe toda la pizzera.",
     "Tapar y dejar leudar en un sitio tibio.",
     "Pincelar con la salsa de tomate y cocinar colocando la pizerra en el piso del horno bien caliente hasta dorar la base.",
     "Humedecer trozos de muzzarella en agua para ayudar a que se derrita mejor. Luego colocar la muzzarella y llevar al medio del horno hasta que se derrita. Decorar con las aceitunas."
   ],
   "image": "/recetas/assets/images/recipes/pizza_clasica.jpg",
   "tags": ["principal", "pizza", "italiana"]
+},
+{
+  "id": 9,
+  "title": "EMPANADAS CRIOLLAS FRITAS",
+  "ingredients": [
+    {
+      "name": "harina",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "grasa o manteca ( para masa )",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "yemas",
+      "quantity": 2
+    },
+    {
+      "name": "sal",
+      "quantity": 1.5,
+      "unit": "cditas"
+    },
+    {
+      "name": "pimentón",
+      "quantity": 1,
+      "unit": "cdita"
+    },
+    {
+      "name": "agua"
+    },
+    {
+      "name": "grasa o manteca ( para relleno )",
+      "quantity": 4,
+      "unit": "cdas"
+    },
+    {
+      "name": "cebolla grande",
+      "quantity": 1
+    },
+    {
+      "name": "morrón",
+      "quantity": 2
+    },
+    {
+      "name": "tomate",
+      "quantity": 2
+    },
+    {
+      "name": "sal"
+    },
+    {
+      "name": "pimienta"
+    },
+    {
+      "name": "carne picada gruesa",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "vinagre",
+      "quantity": "1/2",
+      "unit": "cda"
+    },
+    {
+      "name": "perejil",
+      "quantity": "1/2",
+      "unit": "cda"
+    },
+    {
+      "name": "orégano",
+      "quantity": "1/2",
+      "unit": "cdita"
+    },
+    {
+      "name": "azúcar",
+      "quantity": "1/2",
+      "unit": "cda"
+    },
+    {
+      "name": "pimentón",
+      "quantity": 1.5,
+      "unit": "cdas"
+    },
+    {
+      "name": "huevo duro",
+      "quantity": 2
+    },
+    {
+      "name": "pasas de uva sin semilla ( opcional )",
+      "quantity": 2,
+      "unit": "cdas"
+    },
+    {
+      "name": "aceitunas verdes",
+      "quantity": "100",
+      "unit": "g"
+    },
+    {
+      "name": "aceite o grasa"
+    }
+  ],
+  "procedure": [
+    "Para la masa, formar un anillo sobre la mesa con la harina. En su interior poner la grasa ( o manteca ), las yemas, la sal y el pimentón.",
+    "Mezclar todo mientras se le suma agua de a poco, hasta que quede una masa que no se quede pegada, un poquito como mucho. No trabajarla tanto. Agregar agua si hace falta.",
+    "Separar la masa en bollitos ( para cada empanada ), cubrirlos y reposar por 30 minutos. Luego estirar la masa en una superficie enharinada, que quede de 2mm aproximadamente.",
+    "Despegarla un poco de la superficie y cortar con forma de disco con un diámetro de 10cm. Juntar los recortes que sobrren para otras tapas.",
+    "Para el relleno, derretir en una cacerola 1 cucharada generosa de grasa ( o manteca ) y echar la mitad de la cebolla picada.",
+    "Agregar la mitad del morrón picado y la mitad de los tomates picados. Salpimentar.",
+    "Mezclar y dejar hervir 3 minutos.",
+    "Echar la carne picada en la cacerola y mezclar con un tenedor.",
+    "Cuando la carne se vea cocida, con un marrón ligero, retirar del fuego.",
+    "Echar en un bowl y mezclar lla carne con vinagre, el perejil bien picado, el orégano y media cucharada de azúcar.",
+    "Dejar reposar hasta que quede para reservar en la heladera.",
+    "Para el caldito, poner en una sartén 3 cucharadas de grasa ( o manteca ). Derretir a fuego y cocinar el morrón y la cebolla restante picados.",
+    "Sumar el resto de tomate.",
+    "Mezclar y cocinar despacio por 10 minutos. Retirar del fuego, pasar a un bowl y agregar pimentón, luego dejar reposar.",
+    "Para el armado, separar los discos en una mesa y colocarles unas rodajas de aceitunas y algo de huevo duro picado en en centro, dejar bordes libres.",
+    "Sacar la carne de la heladera y mezclar.",
+    "Agregar una cucharada muy generosa de carne en cada disco de masa.",
+    "Verter un poco de caldito sobre el relleno de la tapa de empanada.",
+    "Agregar el relleno a gusto las pasas de uva remojadas en agua y escurridas ( u omitir este paso si no quieren el toque dulce ).",
+    "Pincelar el borde  de cada disco con agua y cerrar las empanadas para sellar el relleno.",
+    "Hacer el repulgue, como salga con las manos, sino, tenedor.",
+    "Apoyar las empanadas terminadas sobre placas enmantecadas y enharinadas, reservar en la heladera.",
+    "Calentar mucha grasa ( o aceite ) en una cacerola grande y profunda ( o sartén ), freir por tandas hasta que estén ligeramente doradas.",
+    "Sacar y escurrir sobre una servilleta de papel de cocina, opcional para endulzar, espolvorear con azúcar molida."
+  ],
+  "image": "/recetas/assets/images/recipes/empanadas_criollas_fritas.jpg",
+  "tags": ["principal", "empanadas", "argentina"]
 }]

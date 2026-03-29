@@ -7,6 +7,25 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+/* Header top section with logo and menu button */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
 /* Make header items spaced */
 header {
     background-color: #28cc5f;
@@ -14,9 +33,11 @@ header {
     padding: 1vh 2vw;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 80px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: auto;
+    gap: 1vh;
 }
 
 /* Logo size */
@@ -62,6 +83,40 @@ header {
 }
 
 /* Navigation links */
+#main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Desktop navigation layout */
+@media (min-width: 769px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+        gap: 0;
+    }
+    
+    .header-top {
+        width: auto;
+    }
+    
+    .search-container {
+        width: auto;
+        flex: 1;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    #main-nav {
+        width: auto;
+        flex-direction: row;
+    }
+}
+
 header nav a {
     color: white;
     margin: 0 2vw;
@@ -79,7 +134,9 @@ header nav a:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .search-container input[type="text"] {
@@ -134,10 +191,12 @@ header nav a:hover {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 150px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1001;
     right: 0;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 /* Links inside the dropdown */
@@ -154,9 +213,18 @@ header nav a:hover {
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Show the dropdown menu on hover (desktop only) */
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Show dropdown on click for mobile */
+@media (max-width: 768px) {
+    .dropdown-content.show {
+        display: block;
+    }
 }
 
 /* Popup styling */
@@ -221,38 +289,75 @@ footer {
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
-    header {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    #main-nav {
+        display: none;
         flex-direction: column;
-        padding: 2vh 2vw;
-        min-height: auto;
+        align-items: center;
+        gap: 1vh;
+        padding: 1vh 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    #main-nav.mobile-open {
+        display: flex;
+    }
+    
+    .header-top {
+        margin-bottom: 1vh;
     }
     
     .logo {
         height: 6vh;
-        max-height: 60px;
-        margin-bottom: 2vh;
+        max-height: 50px;
     }
     
     .search-container {
         width: 100%;
         justify-content: center;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
+        flex-wrap: wrap;
+        gap: 1vh;
     }
     
     .search-container input[type="text"] {
-        width: 60%;
-        max-width: 200px;
+        width: 70%;
+        max-width: 250px;
+        order: 1;
     }
     
-    header nav {
-        width: 100%;
+    .search-container button:not(.dropbtn) {
+        width: 70%;
+        max-width: 250px;
+        order: 2;
+    }
+    
+    .dropdown {
+        order: 3;
+        width: 70%;
+        max-width: 250px;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        margin-top: 0.5vh;
+    }
+    
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dropdown-content {
+        right: 50%;
+        transform: translateX(50%);
+        min-width: 140px;
     }
     
     header nav a {
-        margin: 1vh 1vw;
+        margin: 0.5vh 1vw;
         font-size: 0.9rem;
     }
     
@@ -280,25 +385,51 @@ footer {
     .search-container {
         flex-direction: column;
         gap: 1vh;
+        align-items: center;
     }
     
     .search-container input[type="text"] {
-        width: 80%;
+        width: 90%;
+        max-width: 280px;
+        order: 1;
     }
     
-    .search-container button,
-    .dropbtn {
-        width: 80%;
-        text-align: center;
+    .search-container button:not(.dropbtn) {
+        width: 90%;
+        max-width: 280px;
+        order: 2;
+    }
+    
+    .dropdown {
+        order: 3;
+        width: 90%;
+        max-width: 280px;
+    }
+    
+    .dropdown-content {
+        left: 0;
+        right: 0;
+        transform: none;
+        min-width: auto;
+    }
+    
+    #main-nav.mobile-open {
+        padding: 2vh 0;
     }
     
     header nav a {
         font-size: 0.8rem;
-        margin: 0.5vh 1vw;
+        margin: 1vh 1vw;
+        padding: 0.5vh 1vw;
     }
     
     .recipe-card-image {
         height: 20vh;
         max-height: 150px;
+    }
+    
+    .logo {
+        height: 5vh;
+        max-height: 40px;
     }
 }

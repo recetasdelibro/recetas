@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             if (category === 'entradas') {
                 return recipe.tags && recipe.tags.some(tag => 
-                    tag.toLowerCase() === 'entrada' || 
-                    tag.toLowerCase() === 'pan' ||
-                    tag.toLowerCase() === 'ensalada'
+                    tag.toLowerCase().includes('entrada') || 
+                    tag.toLowerCase().includes('pan') ||
+                    tag.toLowerCase().includes('ensalada')
                 );
             } else if (category === 'postres') {
                 return recipe.tags && recipe.tags.some(tag => 
-                    tag.toLowerCase() === 'postre'
+                    tag.toLowerCase().includes('postre')
                 );
             } else if (category === 'principales') {
                 return recipe.tags && recipe.tags.some(tag =>
-                    tag.toLowerCase() === 'principal'
+                    tag.toLowerCase().includes('principal')
                 );
             }
             return true;

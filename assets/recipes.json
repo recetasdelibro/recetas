@@ -384,7 +384,7 @@
     "Cortar el peceto en filetes finos, colocar en una fuente y cubrir con la salsa. Decorar con yemas de huevo duro ralladas y alcaparras."
  ],
   "image": "/recetas/assets/images/recipes/vitel_tone.jpg",
-  "tags": ["principal", "carne", "peceto", "argentina"]
+  "tags": ["principal", "carne", "peceto", "argentina", "fiestas"]
 },
 {
   "id": 8,
@@ -583,4 +583,181 @@
   ],
   "image": "/recetas/assets/images/recipes/empanadas_criollas_fritas.jpg",
   "tags": ["principal", "empanadas", "argentina"]
-}]
+},
+  {
+    "id": 10,
+    "title": "BOCADOS DE QUESO AZUL",
+    "ingredients": [
+      {
+        "name": "pionono",
+        "quantity": 1
+      },
+      {
+        "name": "queso azul",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "queso crema descremado",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "apio",
+        "quantity": 4,
+        "unit": "ramas"
+      },
+      {
+        "name": "nuez picada",
+        "quantity": 4,
+        "unit": "cdas"
+      },
+      {
+        "name": "mayonesa light",
+        "quantity": 4,
+        "unit": "cdas"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      },
+      {
+        "name": "fetas queso tybo",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ],
+    "procedure": [
+      "Colocar un pionono totalmente desplegado y separarlo a la mitad a lo largo. Para el relleno, mezclar en un recipiente el queso azul y el queso crema hasta que agarre densidad. Picar el apio y agregar junto con mayonesa y nueces picadas. Salpimentar a gusto.",
+      "Desplegar amabas partes de pionono y tapar con las fetas de queso, luego untar con el relleno del recipiente. Enrollar por el lado largo ycubrir con papel film antes de llevarlo a la heladera por 2 horas o más.",
+      "Sacar de la heladera, quitar el papel y rebanar en rodajas. Acompañar opcionalmente con hojas verdes, quesos, frutas secas, etc."
+],
+    "image": "/recetas/assets/images/recipes/bocados_queso_azul.jpg",
+    "tags": ["entrada", "fiestas", "argentina"]
+  },
+  {
+    "id": 11,
+    "title": "CORONA DE CORDERO EN SALSA DE KETCHUP",
+    "ingredients": [
+      {
+        "name": "costillar de cordero",
+        "quantity": 1
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      },
+      {
+        "name": "aceite en aerosol"
+      },
+      {
+        "name": "rama de tomillo",
+        "quantity": 1
+      },
+      {
+        "name": "rama de romero",
+        "quantity": 1
+      },
+      {
+        "name": "caldo de carne",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "vino tinto",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "ketchup",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "azúcar morena",
+        "quantity": 1,
+        "unit": "cda"
+      },
+      {
+        "name": "caldo de verduras",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "vinagre blanco",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "salsa inglesa",
+        "quantity": 1,
+        "unit": "cda"
+      },
+      {
+        "name": "perejil picado",
+        "quantity": "1/2",
+        "unit": "cda"
+      },
+      {
+        "name": "ají picado",
+        "quantity": "1/2"
+      }
+    ],
+    "procedure": [
+      "Colocar el costillar con los huesos mirando abajo y cortar la carne que está encima entre las costillas. Darlo vuelta y que los huesos queden hacia arriba para curvar la carne formando una corona. Presionar las costillas un poco hacia afuera. Atar alrededor de la parte carnosa con un hilo de cocina.",
+      "Tapar los huesos con papel aluminio. Salpimentar la carne, rociar con el aceite y echar las hierbas.En una rejilla, sobre una fuente para horno, echar el caldo de carne y el vino tinto. Hornear la carne durante 30 minutos a 200º.",
+      "Para la salsa, verter en una olla pequeña el ketchup, el azúcar, el caldo de verduras, el vinagre y la salsa inglesa. Llevar a hervor y sumar el perejil y el ají. Cocinar unos minutos.",
+      " Cortar la corona de cordero en porciones de 2 costillas y retirar el hilo. Acompañar de forma opcional con repollitos de bruselas al vapor y ensaladas."
+    ],
+    "image": "/recetas/assets/images/recipes/cordero_salsa_ketchup.jpg",
+    "tags": ["principal", "fiestas", "argentina"]
+  },
+  {
+    "id": 12,
+    "title": "COPA MERENGADA DE FRUTILLAS",
+    "ingredients": [
+      {
+        "name": "frutillas",
+        "quantity": 650,
+        "unit": "g"
+      },
+      {
+        "name": "azúcar",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "ralladura de naranja",
+        "quantity": 1,
+        "unit": "cda"
+      },
+      {
+        "name": "licor Grand Marnier",
+        "quantity": 4,
+        "unit": "cdas"
+      },
+      {
+        "name": "crema de leche",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "name": "merenguitos",
+        "quantity": 70,
+        "unit": "g"
+      },
+      {
+        "name": "esencia de vainilla"
+      }
+    ],
+    "procedure": [
+      "Limpiar las frutillas y separar algunas para el terminado. Sacar las hojas del resto y cortar en rodajas muy finas. Echarlas en un recipiente y espolvorear con el azúcar, la ralladura de naranja, unas gotas de esencia de vainilla y el licor.",
+      "Dejar macerar por lomenos 4 horas en la heladera. Separar en 5 copas y tapar con la crema batida punto chantilly y por encima los merenguitos enteros o algo triturados. Decorar con las frutillas separadas al inicio."
+    ],
+    "image": "/recetas/assets/images/recipes/copa_frutillas_merengue.jpg",
+    "tags": ["postre", "fiestas", "argentina"]
+  }]

@@ -760,4 +760,47 @@
     ],
     "image": "/recetas/assets/images/recipes/copa_frutillas_merengue.jpg",
     "tags": ["postre", "fiestas", "argentina"]
+  },
+  {
+    "id": 13,
+    "title": "CROQUETAS DE POLLO",
+    "ingredients": [
+      {
+        "name": "pollo",
+        "quantity": 250,
+        "unit": "g"
+      },
+      {
+        "name": "huevo",
+        "quantity": 2
+      },
+      {
+        "name": "leche",
+        "quantity": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "harina",
+        "quantity": 75,
+        "unit": "g"
+      },
+      {
+        "name": "pan rallado"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      }
+    ],
+    "procedure": [
+      "Aprovechar carne de pollo asado o hervido y picar en trozos pequeños. Reservar.",
+      "Derretir nuez de mantequilla o manteca y agregar algo de harina antes de que se dore. Verter la leche de a poco hasta que quede uuna bechamel, espesa, sin grumos.",
+      "Sumar el pollo y mezclar. Salpimentar. Dejar enfriar.",
+      "Al enfriar, con un tenedor darle forma de croquetas. Pasar por harina y huevo batido. Luego rebozar en pan rallado.",
+      "Freir en abundante aceite de oliva ( o común de mezcla ) hasta dorarse."
+    ],
+    "image": "/recetas/assets/images/recipes/croquetas_pollo.jfif",
+    "tags": ["entrada", "pollo", "española"]
   }]

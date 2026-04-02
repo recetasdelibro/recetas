@@ -714,7 +714,7 @@
       " Cortar la corona de cordero en porciones de 2 costillas y retirar el hilo. Acompañar de forma opcional con repollitos de bruselas al vapor y ensaladas."
     ],
     "image": "/recetas/assets/images/recipes/cordero_salsa_ketchup.jpg",
-    "tags": ["principal", "fiestas", "argentina"]
+    "tags": ["principal", "fiestas", "argentina", "cordero"]
   },
   {
     "id": 12,
@@ -803,4 +803,95 @@
     ],
     "image": "/recetas/assets/images/recipes/croquetas_pollo.jfif",
     "tags": ["entrada", "pollo", "española"]
+  },
+  {
+    "id": 14,
+    "title": "TERNERA A LA MONTAÑESA",
+    "ingredients": [
+      {
+        "name": "pierna de ternera cántabra",
+        "quantity": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "aceite de oliva"
+      },
+      {
+        "name": "cebolla",
+        "quantity": 2
+      },
+      {
+        "name": "vino blanco",
+        "quantity": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "caldo de ternera",
+        "quantity": 100,
+        "unit": "ml"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      },
+      {
+        "name": "harina"
+      }
+    ],
+    "procedure": [
+      "Cubetear la carne en partes de 3-4 centímetros. Salpimentar y rebozar en harina.",
+      "Calentar en aceite ya caliente hasta dorar los cubos. Sacar la carne y servar.",
+      "Usar el mismo aceite freir la cebolla picada en parte pequeñas. Cuando tenga un color amarillentos o marrón suave añadir el vino y el caldo.",
+      "Cuando este cocinada verter sobre la carne."
+    ],
+    "image": "/recetas/assets/images/recipes/ternera_montañesa.jpg",
+    "tags": ["principal", "carne", "española"]
+  },
+  {
+    "id": 15,
+    "title": "LECHE FRITA",
+    "ingredients": [
+      {
+        "name": "leche",
+        "quantity": 1,
+        "unit": "l"
+      },
+      {
+        "name": "yemas de huevo",
+        "quantity": 8
+      },
+      {
+        "name": "huevo",
+        "quantity": 1
+      },
+      {
+        "name": "harina",
+        "quantity": 6,
+        "unit": "cdas"
+      },
+      {
+        "name": "azúcar",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "name": "aceite de oliva"
+      },
+      {
+        "name": "canela en polvo"
+      },
+      {
+        "name": "ralladura de limón"
+      }
+    ],
+    "procedure": [
+      "Hervir leche en una cacerola. Aparte mezclar bien la mitad del azúcar, las yemas, 4-5 cucharadas de harina y la ralladura de limón.",
+      "Sumarle la leche y llevar a fuego hasta que espese.",
+      "Remover, colar y dejar en la heladera toda la noche en un recipiente rectangular.",
+      "Al otro día, cortar en cuadrados o bastones cortos, y rebozar en harina y huevo. Freir en bastante aceite de oliva, sacar y espolvorear con un poquito de azúcar y canela."
+    ],
+    "image": "/recetas/assets/images/recipes/leche_frita.jpg",
+    "tags": ["postre", "leche", "española"]
   }]

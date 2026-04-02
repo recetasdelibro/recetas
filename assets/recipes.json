@@ -894,4 +894,118 @@
     ],
     "image": "/recetas/assets/images/recipes/leche_frita.jpg",
     "tags": ["postre", "leche", "española"]
+  },
+  {
+    "id": 16,
+    "title": "CHINCHULÍN DE CORDERO",
+    "ingredients": [
+      {
+        "name": "chinchulín de cordero ( o de novillo )",
+        "quantity": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "leche",
+        "quantity": 1,
+        "unit": "l"
+      },
+      {
+        "name": "hojas de laurel",
+        "quantity": 3
+      },
+      {
+        "name": "pimienta negra en granos",
+        "quantity": 15,
+        "unit": "g"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      }
+    ],
+    "procedure": [
+      "Llenar una cacerola con la leche, el laurel y pimienta. Sumergir el chinchuín y cocinar a fuego lento 30 minutos.",
+      "Escurrir los chinchulines y dorar sobre la parrilla a 15 o 20 cm de las brasas, aproximadamente 10 a 15 minutos. Que queden bien dorados.",
+      "Darlos vuelta y cocinar por 10 minutos más. Retirar y salpimentar."
+    ],
+    "image": "/recetas/assets/images/recipes/chinchulin_cordero.jfif",
+    "tags": ["parrilla", "achura", "argentina"]
+  },
+  {
+    "id": 17,
+    "title": "CHORIZO CRIOLLO DE RUEDA",
+    "ingredients": [
+      {
+        "name": "chorizo puro cerdo de rueda"
+      }
+    ],
+    "procedure": [
+      "Estos chorizos son conocidos por ser de puro cerdo y tener bajo contenido graso.",
+      "Con las brasas ya preparadas, calentar la parrilla, que quede a 24 cm de las brasas.",
+      "Pinchar el chorizo en diferentes partes y cocinar a fuego fuerte 3 minutos.",
+      "Reducir el fuego separando las brasas hacia los costados.",
+      "Cocinar 10 minutos, usar una pinza para darlo vuelta ( no queremos seguir pinchando ) y cocinar 10 minutos más."
+    ],
+    "image": "/recetas/assets/images/recipes/chorizo_rueda.jpg",
+    "tags": ["parrilla", "achura", "argentina"]
+  },
+  {
+    "id": 18,
+    "title": "ASADO DE TIRA CORTE AMERICANO",
+    "ingredients": [
+      {
+        "name": "asado banderita",
+        "quantity": 1.5,
+        "unit": "kg"
+      },
+      {
+        "name": "sal"
+      }
+    ],
+    "procedure": [
+      "Tener listas las brasas. Colocar la parrilla a 15 cm. Calentar.",
+      "El espesor de la carne debe ser aproximadamente de 1,5cm. Cocinar el asado a fuego fuerte unos minutos según el punto que se quiera de la carne.",
+      "Cuando suelte jugo, darlo vuelta. Echarle sal y cocinar hasta que vuelva a largar jugo.",
+      "Retirar la carne y servir con guarnición."
+    ],
+    "image": "/recetas/assets/images/recipes/asado_corte_americano.jpg",
+    "tags": ["parrilla", "carne", "argentina"]
+  },
+  {
+    "id": 19,
+    "title": "BIFES DE CARRÉ DE CERDO",
+    "ingredients": [
+      {
+        "name": "carré de cerdo en bifes"
+      },
+      {
+        "name": "tomillo"
+      },
+      {
+        "name": "ajo"
+      },
+      {
+        "name": "agua",
+        "quantity": 1,
+        "unit": "l"
+      },
+      {
+        "name": "sal parrillera",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ],
+    "procedure": [
+      "Comprar el carré de cerdo entero con hueso y pedir que lo corten en bifes de 2cm de espesor aproximadamente.",
+      "Hacer una salmuera con 1 litro de agua hirviendo con 100g de sal parrillera. Reposar.",
+      "Luego agregar al agua tomillo y ajo picados.",
+      "Sumergir los bifes en la salmuera por 1 hora.",
+      "Tener listas las brasas y colocar la parrilla a 10 cm, dejar calentar la parrilla.",
+      "Escurrir la carne y cocinarla 5 minutos de cada lado, o hasta que quede bien cocida.",
+      "Retirar y opcionalmente pincelar con mostaza de dijón o salsa bbq, acompañar con chutney."
+    ],
+    "image": "/recetas/assets/images/recipes/carre_cerdo.jfif",
+    "tags": ["parrilla", "cerdo", "argentina"]
   }]

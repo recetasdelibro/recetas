@@ -30,7 +30,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return recipe.tags && recipe.tags.some(tag =>
                     tag.toLowerCase() === 'principal'
                 );
+            } else if (category === 'parrilla') {
+                return recipe.tags && recipe.tags.some(tag =>
+                    tag.toLowerCase() === 'parrilla'
+                );
             }
+
             return true;
         };
 

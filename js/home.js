@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <input type="hidden" class="recipe-id" value="${recipe.id}">
                     <div class="recipe-card-content">
                         <h3 class="recipe-title"><a href="pages/recipe.html?search=${recipe.id}">${recipe.title}</a></h3>
+                        ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
                     </div>
                     <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image">
                 </div>

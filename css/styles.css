@@ -65,6 +65,15 @@ header {
     flex-shrink: 0;
 }
 
+/* Recipe flag image styling */
+.recipe-flag {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+    border-radius: 2px;
+    object-fit: contain;
+}
+
 /* Recipe card layout - responsive */
 .recipe-card {
     display: flex;

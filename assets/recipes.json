@@ -50,7 +50,8 @@
     "Introducir la focaccia en el horno y hornear durante 30 minutos. Luego, servir al instante."
   ],
   "image": "/recetas/assets/images/recipes/focaccia.png",
-  "tags": ["pan", "italiano", "tomate"]
+  "flag": "/recetas/assets/images/flags/italia.png",
+  "tags": ["pan", "italiana", "tomate"]
 },
 {
   "id": 2,
@@ -109,7 +110,8 @@
     "Colocar sobre la ricota los cherry y los redondos. Espolvorear con la cebolla de verdeo picada y servir."
   ],
   "image": "/recetas/assets/images/recipes/bruschetta.jfif",
-  "tags": ["pan", "italiano", "tomate"]
+  "flag": "/recetas/assets/images/flags/italia.png",
+  "tags": ["pan", "italiana", "tomate"]
 },
 {
   "id": 3,
@@ -168,7 +170,8 @@
     "Finalizar con almendras picadas y las hojas de albahaca para decorar."
   ],
   "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
-  "tags": ["ensalada", "italiano", "tomate"]
+  "flag": "/recetas/assets/images/flags/italia.png",
+  "tags": ["ensalada", "italiana", "tomate"]
 },
 {
   "id": 4,
@@ -203,7 +206,8 @@
     "Servir frío. Queda ideal acompañado de helado de crema americana."
   ],
   "image": "/recetas/assets/images/recipes/fresas_balsamico.jpg",
-  "tags": ["postre", "italiano", "frutillas", "fresas"]
+  "flag": "/recetas/assets/images/flags/italia.png",
+  "tags": ["postre", "italiana", "frutillas", "fresas"]
 },
 {
   "id": 5,
@@ -246,7 +250,8 @@
     "Tip: se puede decorar con cerezas confitadas, tallos de angélica u hojas de menta fresca."
   ],
   "image": "/recetas/assets/images/recipes/flan_anana.jfif",
-  "tags": ["postre", "caribe", "piña", "anana"]
+  "flag": "/recetas/assets/images/flags/cuba.png",
+  "tags": ["postre", "caribe", "piña", "anana", "cubana"]
 },
 {
   "id": 6,
@@ -305,7 +310,8 @@
     "Tip: se puede acompañar con helado de coco."
   ],
   "image": "/recetas/assets/images/recipes/platano_leche_coco.jfif",
-  "tags": ["postre", "caribe", "piña", "anana"]
+  "flag": "/recetas/assets/images/flags/colombia.png",
+  "tags": ["postre", "caribe", "platano", "coco"]
 },
 {
   "id": 7,
@@ -384,6 +390,7 @@
     "Cortar el peceto en filetes finos, colocar en una fuente y cubrir con la salsa. Decorar con yemas de huevo duro ralladas y alcaparras."
  ],
   "image": "/recetas/assets/images/recipes/vitel_tone.jpg",
+  "flag": "/recetas/assets/images/flags/argentina.png",
   "tags": ["principal", "carne", "peceto", "argentina", "fiestas"]
 },
 {
@@ -451,6 +458,7 @@
     "Humedecer trozos de muzzarella en agua para ayudar a que se derrita mejor. Luego colocar la muzzarella y llevar al medio del horno hasta que se derrita. Decorar con las aceitunas."
   ],
   "image": "/recetas/assets/images/recipes/pizza_clasica.jpg",
+  "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["principal", "pizza", "italiana"]
 },
 {
@@ -582,6 +590,7 @@
     "Sacar y escurrir sobre una servilleta de papel de cocina, opcional para endulzar, espolvorear con azúcar molida."
   ],
   "image": "/recetas/assets/images/recipes/empanadas_criollas_fritas.jpg",
+  "flag": "/recetas/assets/images/flags/argentina.png",
   "tags": ["principal", "empanadas", "argentina"]
 },
   {
@@ -635,6 +644,7 @@
       "Sacar de la heladera, quitar el papel y rebanar en rodajas. Acompañar opcionalmente con hojas verdes, quesos, frutas secas, etc."
 ],
     "image": "/recetas/assets/images/recipes/bocados_queso_azul.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["entrada", "fiestas", "argentina"]
   },
   {
@@ -759,6 +769,7 @@
       "Dejar macerar por lomenos 4 horas en la heladera. Separar en 5 copas y tapar con la crema batida punto chantilly y por encima los merenguitos enteros o algo triturados. Decorar con las frutillas separadas al inicio."
     ],
     "image": "/recetas/assets/images/recipes/copa_frutillas_merengue.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["postre", "fiestas", "argentina"]
   },
   {
@@ -802,6 +813,7 @@
       "Freir en abundante aceite de oliva ( o común de mezcla ) hasta dorarse."
     ],
     "image": "/recetas/assets/images/recipes/croquetas_pollo.jfif",
+    "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["entrada", "pollo", "española"]
   },
   {
@@ -847,6 +859,7 @@
       "Cuando este cocinada verter sobre la carne."
     ],
     "image": "/recetas/assets/images/recipes/ternera_montañesa.jpg",
+    "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["principal", "carne", "española"]
   },
   {
@@ -893,6 +906,7 @@
       "Al otro día, cortar en cuadrados o bastones cortos, y rebozar en harina y huevo. Freir en bastante aceite de oliva, sacar y espolvorear con un poquito de azúcar y canela."
     ],
     "image": "/recetas/assets/images/recipes/leche_frita.jpg",
+    "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["postre", "leche", "española"]
   },
   {
@@ -931,6 +945,7 @@
       "Darlos vuelta y cocinar por 10 minutos más. Retirar y salpimentar."
     ],
     "image": "/recetas/assets/images/recipes/chinchulin_cordero.jfif",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "achura", "argentina"]
   },
   {
@@ -949,6 +964,7 @@
       "Cocinar 10 minutos, usar una pinza para darlo vuelta ( no queremos seguir pinchando ) y cocinar 10 minutos más."
     ],
     "image": "/recetas/assets/images/recipes/chorizo_rueda.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "achura", "argentina"]
   },
   {
@@ -971,6 +987,7 @@
       "Retirar la carne y servir con guarnición."
     ],
     "image": "/recetas/assets/images/recipes/asado_corte_americano.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "carne", "argentina"]
   },
   {
@@ -1007,5 +1024,6 @@
       "Retirar y opcionalmente pincelar con mostaza de dijón o salsa bbq, acompañar con chutney."
     ],
     "image": "/recetas/assets/images/recipes/carre_cerdo.jfif",
+    "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "cerdo", "argentina"]
   }]

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (randomRecipes.length > 0) {
             messageBox.style.display = 'none';
             recipeGrid.innerHTML = randomRecipes.map(recipe => `
-                <div class="recipe-card">
+                <div class="recipe-card ${recipe.tags && recipe.tags.includes('parrilla') ? 'parrilla' : ''}">
                     <input type="hidden" class="recipe-id" value="${recipe.id}">
                     <div class="recipe-card-content">
                         <h3 class="recipe-title"><a href="pages/recipe.html?search=${recipe.id}">${recipe.title}</a></h3>

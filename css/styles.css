@@ -91,6 +91,11 @@ header {
     position: relative;
 }
 
+/* Parrilla recipe cards use different background */
+.recipe-card.parrilla {
+    background-image: url('/recetas/assets/images/logo_parrilla.png');
+}
+
 .recipe-card::before {
     content: '';
     position: absolute;

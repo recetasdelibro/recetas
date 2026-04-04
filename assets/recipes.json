@@ -51,7 +51,8 @@
   ],
   "image": "/recetas/assets/images/recipes/focaccia.png",
   "flag": "/recetas/assets/images/flags/italia.png",
-  "tags": ["pan", "italiana", "tomate"]
+  "tags": ["pan", "italiana", "tomate"],
+  "libro": "Tomate"
 },
 {
   "id": 2,
@@ -111,7 +112,8 @@
   ],
   "image": "/recetas/assets/images/recipes/bruschetta.jfif",
   "flag": "/recetas/assets/images/flags/italia.png",
-  "tags": ["pan", "italiana", "tomate"]
+  "tags": ["pan", "italiana", "tomate"],
+  "libro": "Tomate"
 },
 {
   "id": 3,
@@ -171,7 +173,8 @@
   ],
   "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
   "flag": "/recetas/assets/images/flags/italia.png",
-  "tags": ["ensalada", "italiana", "tomate"]
+  "tags": ["ensalada", "italiana", "tomate"],
+  "libro": "Tomate"
 },
 {
   "id": 4,
@@ -207,7 +210,8 @@
   ],
   "image": "/recetas/assets/images/recipes/fresas_balsamico.jpg",
   "flag": "/recetas/assets/images/flags/italia.png",
-  "tags": ["postre", "italiana", "frutillas", "fresas"]
+  "tags": ["postre", "italiana", "frutillas", "fresas"],
+  "libro": "Postres con frutas - 100% placer - Larousse"
 },
 {
   "id": 5,
@@ -251,7 +255,8 @@
   ],
   "image": "/recetas/assets/images/recipes/flan_anana.jfif",
   "flag": "/recetas/assets/images/flags/cuba.png",
-  "tags": ["postre", "caribe", "piña", "anana", "cubana"]
+  "tags": ["postre", "caribe", "piña", "anana", "cubana"],
+  "libro": "Postres con frutas - 100% placer - Larousse"
 },
 {
   "id": 6,
@@ -311,7 +316,8 @@
   ],
   "image": "/recetas/assets/images/recipes/platano_leche_coco.jfif",
   "flag": "/recetas/assets/images/flags/colombia.png",
-  "tags": ["postre", "caribe", "platano", "coco"]
+  "tags": ["postre", "caribe", "platano", "coco"],
+  "libro": "Postres con frutas - 100% placer - Larousse"
 },
 {
   "id": 7,
@@ -391,7 +397,8 @@
  ],
   "image": "/recetas/assets/images/recipes/vitel_tone.jpg",
   "flag": "/recetas/assets/images/flags/argentina.png",
-  "tags": ["principal", "carne", "peceto", "argentina", "fiestas"]
+  "tags": ["principal", "carne", "peceto", "argentina", "fiestas"],
+  "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
 },
 {
   "id": 8,
@@ -459,7 +466,8 @@
   ],
   "image": "/recetas/assets/images/recipes/pizza_clasica.jpg",
   "flag": "/recetas/assets/images/flags/italia.png",
-  "tags": ["principal", "pizza", "italiana"]
+  "tags": ["principal", "pizza", "italiana"],
+  "libro": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
 },
 {
   "id": 9,
@@ -573,7 +581,7 @@
     "Mezclar y dejar hervir 3 minutos.",
     "Echar la carne picada en la cacerola y mezclar con un tenedor.",
     "Cuando la carne se vea cocida, con un marrón ligero, retirar del fuego.",
-    "Echar en un bowl y mezclar lla carne con vinagre, el perejil bien picado, el orégano y media cucharada de azúcar.",
+    "Echar en un bowl y mezclar la carne con vinagre, el perejil bien picado, el orégano y media cucharada de azúcar.",
     "Dejar reposar hasta que quede para reservar en la heladera.",
     "Para el caldito, poner en una sartén 3 cucharadas de grasa ( o manteca ). Derretir a fuego y cocinar el morrón y la cebolla restante picados.",
     "Sumar el resto de tomate.",
@@ -591,7 +599,8 @@
   ],
   "image": "/recetas/assets/images/recipes/empanadas_criollas_fritas.jpg",
   "flag": "/recetas/assets/images/flags/argentina.png",
-  "tags": ["principal", "empanadas", "argentina"]
+  "tags": ["principal", "empanadas", "argentina"],
+  "libro": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
 },
   {
     "id": 10,
@@ -645,7 +654,8 @@
 ],
     "image": "/recetas/assets/images/recipes/bocados_queso_azul.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["entrada", "fiestas", "argentina"]
+    "tags": ["entrada", "fiestas", "argentina"],
+    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
   },
   {
     "id": 11,
@@ -724,7 +734,8 @@
       " Cortar la corona de cordero en porciones de 2 costillas y retirar el hilo. Acompañar de forma opcional con repollitos de bruselas al vapor y ensaladas."
     ],
     "image": "/recetas/assets/images/recipes/cordero_salsa_ketchup.jpg",
-    "tags": ["principal", "fiestas", "argentina", "cordero"]
+    "tags": ["principal", "fiestas", "argentina", "cordero"],
+    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
   },
   {
     "id": 12,
@@ -770,7 +781,8 @@
     ],
     "image": "/recetas/assets/images/recipes/copa_frutillas_merengue.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["postre", "fiestas", "argentina"]
+    "tags": ["postre", "fiestas", "argentina"],
+    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
   },
   {
     "id": 13,
@@ -814,7 +826,8 @@
     ],
     "image": "/recetas/assets/images/recipes/croquetas_pollo.jfif",
     "flag": "/recetas/assets/images/flags/españa.png",
-    "tags": ["entrada", "pollo", "española"]
+    "tags": ["entrada", "pollo", "española"],
+    "libro": "Cocina española - Pepa Torres"
   },
   {
     "id": 14,
@@ -860,7 +873,8 @@
     ],
     "image": "/recetas/assets/images/recipes/ternera_montañesa.jpg",
     "flag": "/recetas/assets/images/flags/españa.png",
-    "tags": ["principal", "carne", "española"]
+    "tags": ["principal", "carne", "española"],
+    "libro": "Cocina española - Pepa Torres"
   },
   {
     "id": 15,
@@ -907,7 +921,8 @@
     ],
     "image": "/recetas/assets/images/recipes/leche_frita.jpg",
     "flag": "/recetas/assets/images/flags/españa.png",
-    "tags": ["postre", "leche", "española"]
+    "tags": ["postre", "leche", "española"],
+    "libro": "Cocina española - Pepa Torres"
   },
   {
     "id": 16,
@@ -946,7 +961,8 @@
     ],
     "image": "/recetas/assets/images/recipes/chinchulin_cordero.jfif",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["parrilla", "achura", "argentina"]
+    "tags": ["parrilla", "achura", "argentina"],
+    "libro": "La cabrera - Gastón Riveira"
   },
   {
     "id": 17,
@@ -965,7 +981,8 @@
     ],
     "image": "/recetas/assets/images/recipes/chorizo_rueda.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["parrilla", "achura", "argentina"]
+    "tags": ["parrilla", "achura", "argentina"],
+    "libro": "La cabrera - Gastón Riveira"
   },
   {
     "id": 18,
@@ -988,7 +1005,8 @@
     ],
     "image": "/recetas/assets/images/recipes/asado_corte_americano.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["parrilla", "carne", "argentina"]
+    "tags": ["parrilla", "carne", "argentina"],
+    "libro": "La cabrera - Gastón Riveira"
   },
   {
     "id": 19,
@@ -1025,5 +1043,37 @@
     ],
     "image": "/recetas/assets/images/recipes/carre_cerdo.jfif",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["parrilla", "cerdo", "argentina"]
+    "tags": ["parrilla", "cerdo", "argentina"],
+    "libro": "La cabrera - Gastón Riveira"
+  },
+  {
+    "id": 20,
+    "title": "POLLO A LA PARRILLA",
+    "ingredients": [
+      {
+        "name": "pollo",
+        "quantity": 2,
+        "unit": "kg"
+      },
+      {
+        "name": "agua",
+        "quantity": 2,
+        "unit": "l"
+      },
+      {
+        "name": "sal"
+      }
+    ],
+    "procedure": [
+      "Abrir el pollo al medio separando las pechugas y las alas.",
+      "Preparar una salmuera con el agua caliente y 10g de sal ( 5g por litro ). Mezclar para disolver la sal y sumergir al pollo. Tapar el recipiente y dejar en la heladera tapado por 24hs.",
+      "Sacar el pollo de la heladera y escurrir.",
+      "A fuego fuerte, a 20 o 30cm de las brasas, cocinarlo abierto. Usar la mano para medir la temperatura, colocar la mano cerca de la parrilla y tiene que aguantar 6 segundos aproximadamente.",
+      "Cocinar del lado dell interior primero, entre 20 y 25 minutos. Luego darlo vuelta y cocinar otros 20-25 minutos para dorar la piel.",
+      "Servir entero, o en cuartos ( pata muslo y pechuga ala ) o en octavos ( pata, muslo, pechuga y ala )."
+    ],
+    "image": "/recetas/assets/images/recipes/pollo_parrilla.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
+    "tags": ["parrilla", "pollo", "argentina"],
+    "libro": "El gran libro Clarín del asador - Pollo por La cabrera"
   }]

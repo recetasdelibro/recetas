@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Find recipe by id
         const recipe = recipes.find(r => r.id === recipeId);
-
+        
         // Conditional Rendering
         if (recipe) {
             // Hide "No results" and show content
@@ -34,6 +34,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             procedureList.innerHTML = recipe.procedure
                 .map(step => `<li>${step}</li>`)
                 .join('');
+            
+            // Add libro information before footer if it exists
+            if (recipe.libro) {
+                const libroElement = document.createElement('div');
+                libroElement.innerHTML = `<p><em>Fuente: ${recipe.libro}</em></p>`;
+                libroElement.className = 'recipe-source-container';
+                
+                // Insert before the footer
+                const footer = document.querySelector('footer');
+                if (footer) {
+                    footer.parentNode.insertBefore(libroElement, footer);
+                }
+            }
         } else {
             // Handle "Nothing found"
             if (recipeContent) recipeContent.style.display = 'none';

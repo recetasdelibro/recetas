@@ -1069,11 +1069,72 @@
       "Preparar una salmuera con el agua caliente y 10g de sal ( 5g por litro ). Mezclar para disolver la sal y sumergir al pollo. Tapar el recipiente y dejar en la heladera tapado por 24hs.",
       "Sacar el pollo de la heladera y escurrir.",
       "A fuego fuerte, a 20 o 30cm de las brasas, cocinarlo abierto. Usar la mano para medir la temperatura, colocar la mano cerca de la parrilla y tiene que aguantar 6 segundos aproximadamente.",
-      "Cocinar del lado dell interior primero, entre 20 y 25 minutos. Luego darlo vuelta y cocinar otros 20-25 minutos para dorar la piel.",
+      "Cocinar del lado del interior primero, entre 20 y 25 minutos. Luego darlo vuelta y cocinar otros 20-25 minutos para dorar la piel.",
       "Servir entero, o en cuartos ( pata muslo y pechuga ala ) o en octavos ( pata, muslo, pechuga y ala )."
     ],
     "image": "/recetas/assets/images/recipes/pollo_parrilla.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "pollo", "argentina"],
     "libro": "El gran libro Clarín del asador - Pollo por La cabrera"
+  },
+  {
+    "id": 21,
+    "title": "POUTINE",
+    "ingredients": [
+      {
+        "name": "papa",
+        "quantity": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "caldo de verduras",
+        "quantity": 1,
+        "unit": "l"
+      },
+      {
+        "name": "manteca sin sal",
+        "quantity": 110,
+        "unit": "g"
+      },
+      {
+        "name": "harina",
+        "quantity": 75,
+        "unit": "g"
+      },
+      {
+        "name": "salsa Worchestershire",
+        "quantity": 1.5,
+        "unit": "cdita"
+      },
+      {
+        "name": "sal kosher"
+      },
+      {
+        "name": "pimienta negra"
+      },
+      {
+        "name": "aceite neutro",
+        "quantity": "2-3",
+        "unit": "l"
+      },
+      {
+        "name": "queso de grano ( o muzzarella )",
+        "quantity": 350,
+        "unit": "g"
+      }
+    ],
+    "procedure": [
+      "Lavar ( si están negras con cepillo ) y pelar las papas. Cortarlas en bastones de 0,8-1,3 cm de grosor y sumergirlas en agua caliente por 30-60 minutos ( según la densidad deseada ).",
+      "Escurrir, darle un chorro de agua fría y secar con papel de cocina.",
+      "Para la salsa hay que calentar el caldo de verduras hasta que hierva. Aparte derretir la manteca a fuego medio. Sumar la harina y revolver.",
+      "Agregar el caldo de verduras y la salsa Worchestershire sin dejar de revolver. Cuando espese bajar a fuego mínimo y salpimentar.",
+      "Llenar en un recipiente apto para freir el aceite ( de preferencia hondo ) y calentar aproximadamente a 130°. Freir las papas en tandas pequeñas por 6-8 minutos hasta quedar translúcidas.",
+      "Retirar y dejar sobre un papel de cocina. Volver a llevar el aceite a 130° y repetir. Dejar que las papas estén a temperatura ambiente.",
+      "Aumentar el fuego y llevar a 190°. De a tandas volver a frerir las papas aproximadamente por 5 minutos o hasta dorarlas. Dejarlas reposar en papel de cocina nuevamente. Hechar sal a gusto.",
+      "Servir en porciones a gusto con el queso en grano o la muzzarella en cubos con la salsa caliente."
+    ],
+    "image": "/recetas/assets/images/recipes/poutine.jpg",
+    "flag": "/recetas/assets/images/flags/canada.jfif",
+    "tags": ["entrada", "papa", "canadiense"],
+    "libro": "Food truck - Pham y Shen"
   }]

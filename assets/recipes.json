@@ -52,7 +52,8 @@
   "image": "/recetas/assets/images/recipes/focaccia.png",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["pan", "italiana", "tomate"],
-  "libro": "Tomate"
+  "book": "Tomate",
+  "servings": 8
 },
 {
   "id": 2,
@@ -113,7 +114,8 @@
   "image": "/recetas/assets/images/recipes/bruschetta.jfif",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["pan", "italiana", "tomate"],
-  "libro": "Tomate"
+  "book": "Tomate",
+  "servings": 6
 },
 {
   "id": 3,
@@ -174,7 +176,8 @@
   "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["ensalada", "italiana", "tomate"],
-  "libro": "Tomate"
+  "book": "Tomate",
+  "servings": 3
 },
 {
   "id": 4,
@@ -211,7 +214,8 @@
   "image": "/recetas/assets/images/recipes/fresas_balsamico.jpg",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["postre", "italiana", "frutillas", "fresas"],
-  "libro": "Postres con frutas - 100% placer - Larousse"
+  "book": "Postres con frutas - 100% placer - Larousse",
+  "servings": 4
 },
 {
   "id": 5,
@@ -256,7 +260,8 @@
   "image": "/recetas/assets/images/recipes/flan_anana.jfif",
   "flag": "/recetas/assets/images/flags/cuba.png",
   "tags": ["postre", "caribe", "piña", "anana", "cubana"],
-  "libro": "Postres con frutas - 100% placer - Larousse"
+  "book": "Postres con frutas - 100% placer - Larousse",
+  "servings": 4
 },
 {
   "id": 6,
@@ -317,7 +322,8 @@
   "image": "/recetas/assets/images/recipes/platano_leche_coco.jfif",
   "flag": "/recetas/assets/images/flags/colombia.png",
   "tags": ["postre", "caribe", "platano", "coco"],
-  "libro": "Postres con frutas - 100% placer - Larousse"
+  "book": "Postres con frutas - 100% placer - Larousse",
+  "servings": 4
 },
 {
   "id": 7,
@@ -398,7 +404,8 @@
   "image": "/recetas/assets/images/recipes/vitel_tone.jpg",
   "flag": "/recetas/assets/images/flags/argentina.png",
   "tags": ["principal", "carne", "peceto", "argentina", "fiestas"],
-  "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
+  "book": "Cocina rica y saludable - Menú para fiestas - Clarín",
+  "servings": 8
 },
 {
   "id": 8,
@@ -467,7 +474,7 @@
   "image": "/recetas/assets/images/recipes/pizza_clasica.jpg",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["principal", "pizza", "italiana"],
-  "libro": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
+  "book": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
 },
 {
   "id": 9,
@@ -600,7 +607,7 @@
   "image": "/recetas/assets/images/recipes/empanadas_criollas_fritas.jpg",
   "flag": "/recetas/assets/images/flags/argentina.png",
   "tags": ["principal", "empanadas", "argentina"],
-  "libro": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
+  "book": "Recetas inolvidables de Blanca Cotta - Pizzas y empanadas - Clarín"
 },
   {
     "id": 10,
@@ -654,8 +661,9 @@
 ],
     "image": "/recetas/assets/images/recipes/bocados_queso_azul.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
-    "tags": ["entrada", "fiestas", "argentina"],
-    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
+    "tags": ["entrada", "fiestas", "argentina", "queso azul"],
+    "book": "Cocina rica y saludable - Menú para fiestas - Clarín",
+    "servings": 12
   },
   {
     "id": 11,
@@ -735,7 +743,8 @@
     ],
     "image": "/recetas/assets/images/recipes/cordero_salsa_ketchup.jpg",
     "tags": ["principal", "fiestas", "argentina", "cordero"],
-    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
+    "book": "Cocina rica y saludable - Menú para fiestas - Clarín",
+    "servings": 6
   },
   {
     "id": 12,
@@ -782,7 +791,8 @@
     "image": "/recetas/assets/images/recipes/copa_frutillas_merengue.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["postre", "fiestas", "argentina"],
-    "libro": "Cocina rica y saludable - Menú para fiestas - Clarín"
+    "book": "Cocina rica y saludable - Menú para fiestas - Clarín",
+    "servings": 5
   },
   {
     "id": 13,
@@ -827,7 +837,8 @@
     "image": "/recetas/assets/images/recipes/croquetas_pollo.jfif",
     "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["entrada", "pollo", "española"],
-    "libro": "Cocina española - Pepa Torres"
+    "book": "Cocina española - Pepa Torres",
+    "servings": 4
   },
   {
     "id": 14,
@@ -874,7 +885,8 @@
     "image": "/recetas/assets/images/recipes/ternera_montañesa.jpg",
     "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["principal", "carne", "española"],
-    "libro": "Cocina española - Pepa Torres"
+    "book": "Cocina española - Pepa Torres",
+    "servings": 4
   },
   {
     "id": 15,
@@ -922,7 +934,8 @@
     "image": "/recetas/assets/images/recipes/leche_frita.jpg",
     "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["postre", "leche", "española"],
-    "libro": "Cocina española - Pepa Torres"
+    "book": "Cocina española - Pepa Torres",
+    "servings": 4
   },
   {
     "id": 16,
@@ -962,7 +975,7 @@
     "image": "/recetas/assets/images/recipes/chinchulin_cordero.jfif",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "achura", "argentina"],
-    "libro": "La cabrera - Gastón Riveira"
+    "book": "La cabrera - Gastón Riveira"
   },
   {
     "id": 17,
@@ -982,7 +995,7 @@
     "image": "/recetas/assets/images/recipes/chorizo_rueda.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "achura", "argentina"],
-    "libro": "La cabrera - Gastón Riveira"
+    "book": "La cabrera - Gastón Riveira"
   },
   {
     "id": 18,
@@ -1006,7 +1019,7 @@
     "image": "/recetas/assets/images/recipes/asado_corte_americano.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "carne", "argentina"],
-    "libro": "La cabrera - Gastón Riveira"
+    "book": "La cabrera - Gastón Riveira"
   },
   {
     "id": 19,
@@ -1044,7 +1057,7 @@
     "image": "/recetas/assets/images/recipes/carre_cerdo.jfif",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "cerdo", "argentina"],
-    "libro": "La cabrera - Gastón Riveira"
+    "book": "La cabrera - Gastón Riveira"
   },
   {
     "id": 20,
@@ -1075,7 +1088,8 @@
     "image": "/recetas/assets/images/recipes/pollo_parrilla.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["parrilla", "pollo", "argentina"],
-    "libro": "El gran libro Clarín del asador - Pollo por La cabrera"
+    "book": "El gran libro Clarín del asador - Pollo por La cabrera",
+    "servings": 4
   },
   {
     "id": 21,
@@ -1136,7 +1150,8 @@
     "image": "/recetas/assets/images/recipes/poutine.jpg",
     "flag": "/recetas/assets/images/flags/canada.jfif",
     "tags": ["entrada", "papa", "canadiense"],
-    "libro": "Food truck - Pham y Shen"
+    "book": "Food truck - Pham y Shen",
+    "servings": 6
   },
   {
     "id": 22,
@@ -1185,7 +1200,8 @@
     "image": "/recetas/assets/images/recipes/philly_cheese_steak.jpg",
     "flag": "/recetas/assets/images/flags/usa.jpg",
     "tags": ["principal", "carne", "estadounidense", "sandwhich"],
-    "libro": "Food truck - Pham y Shen"
+    "book": "Food truck - Pham y Shen",
+    "servings": 1
   },
   {
     "id": 23,
@@ -1235,5 +1251,6 @@
     "image": "/recetas/assets/images/recipes/panqueque_manzana.jpg",
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["postre", "manzana", "argentina"],
-    "libro": "Cocina sin excusas - Pablo Massey"
+    "book": "Cocina sin excusas - Pablo Massey",
+    "servings": 4
   }]

@@ -1137,4 +1137,53 @@
     "flag": "/recetas/assets/images/flags/canada.jfif",
     "tags": ["entrada", "papa", "canadiense"],
     "libro": "Food truck - Pham y Shen"
+  },
+  {
+    "id": 22,
+    "title": "PHILLY CHEESESTEAK CLÁSICO",
+    "ingredients": [
+      {
+        "name": "solomillo o chuleta de ternera",
+        "quantity": 225,
+        "unit": "g"
+      },
+      {
+        "name": "aceite de canola",
+        "quantity": 30,
+        "unit": "ml"
+      },
+      {
+        "name": "cebolla",
+        "quantity": "1/2"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      },
+      {
+        "name": "pimentón"
+      },
+      {
+        "name": "Queso crema Cheese Whiz ( o salsa cheddar )"
+      },
+      {
+        "name": "pan bagguette ( o similar )"
+      }
+    ],
+    "procedure": [
+      "Reposar la ternera al menos 30 minutos en la heladera, para que esté fría antes de cortarla.",
+      "Con un cuchillo bien afilado, cortar en fetas finas.",
+      "Calentar el aceite en una sartén pequeña. Saltear la cebolla cortada en dados o tipo pluma por 5-10 minutos, hasta dorar pero sin caramelizar. Retirar la cebolla.",
+      "En la misma sartén, cocinar la carne con sal, pimienta y pimentón a gusto por 3-4 minutos. Cocinar hasta que no haya rastros de sangre o color rojizo. Luego cortarla en partes pequeñas y mezclar con la cebolla.",
+      "Calentar la crema de queso a fuego lento.",
+      "Abrir el pan por un lado pero no cortar completamente. Esparcir la crema caliente dentro del pan por ambos lados.",
+      "Darle la forma del pan a la carne con la cebolla en la satén caliente y colocar el pan por encima con el queso del lado de abajo y abierto. Dejarlo por 10 segundos.",
+      "Con una espatula pasarla por debajo de la carne. Dar vuelta y cerrar."
+    ],
+    "image": "/recetas/assets/images/recipes/philly_cheese_steak.jpg",
+    "flag": "/recetas/assets/images/flags/usa.jpg",
+    "tags": ["principal", "carne", "estadounidense", "sandwhich"],
+    "libro": "Food truck - Pham y Shen"
   }]

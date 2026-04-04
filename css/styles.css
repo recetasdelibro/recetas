@@ -316,7 +316,7 @@ main {
 
 /* Procedure content width limitation */
 .procedure {
-    max-width: 50vw;
+    max-width: 70vw;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }

@@ -1186,4 +1186,54 @@
     "flag": "/recetas/assets/images/flags/usa.jpg",
     "tags": ["principal", "carne", "estadounidense", "sandwhich"],
     "libro": "Food truck - Pham y Shen"
+  },
+  {
+    "id": 23,
+    "title": "PANQUEQUES DE MANZANA",
+    "ingredients": [
+      {
+        "name": "huevo",
+        "quantity": 3
+      },
+      {
+        "name": "harina 000",
+        "quantity": 220,
+        "unit": "g"
+      },
+      {
+        "name": "leche",
+        "quantity": 500,
+        "unit": "ml"
+      },
+      {
+        "name": "azúcar",
+        "quantity": 225,
+        "unit": "g"
+      },
+      {
+        "name": "manteca"
+      },
+      {
+        "name": "manzana verde",
+        "quantity": 3
+      },
+      {
+        "name": "ron",
+        "quantity": 100,
+        "unit": "ml"
+      }
+    ],
+    "procedure": [
+      "Batir los huevos hasta hacer espuma.",
+      "Batir la leche y la harina. Hacerlo lentamente para que no se formen grumos.",
+      "Agregar los huevos y 75g de azúcar. Mezclar hasta que quede una masa lisa y dejar reposar por 30 minutos.",
+      "Cortar las manzanas en láminas finas y espolvorean con 50g de azúcar.",
+      "Calentar la satén y cocinamos la mitad de la masa con las manzanas encima y cubrimos con el resto de la masa, tapar la sartén.",
+      "Cocinar a fuego bajo hasta dorar la base, luego darla vuelta.",
+      "Echamos azúcar por encima y flambeamos con el ron."
+    ],
+    "image": "/recetas/assets/images/recipes/panqueque_manzana.jpg",
+    "flag": "/recetas/assets/images/flags/argentina.png",
+    "tags": ["postre", "manzana", "argentina"],
+    "libro": "Cocina sin excusas - Pablo Massey"
   }]

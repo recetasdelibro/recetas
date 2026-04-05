@@ -145,6 +145,13 @@ header {
         flex: 1;
         justify-content: center;
         margin: 0;
+        max-width: 400px;
+    }
+    
+    .search-container input[type="text"] {
+        width: 200px;
+        min-width: 150px;
+        flex: none;
     }
     
     #main-nav {
@@ -182,6 +189,9 @@ header nav a:hover {
     border: none;
     width: 200px;
     min-width: 150px;
+    flex: 1;
+    height: 32px;
+    box-sizing: border-box;
 }
 
 .search-container button {
@@ -199,6 +209,19 @@ header nav a:hover {
     background-color: #777;
 }
 
+/* Search button specific styling */
+#search-btn {
+    font-size: 0.9rem;
+    padding: 1vh 1vw;
+    min-width: auto;
+    width: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
 /* Dropdown button */
 .dropbtn {
     background-color: #000000;
@@ -209,6 +232,11 @@ header nav a:hover {
     border-radius: 3px;
     cursor: pointer;
     white-space: nowrap;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .dropbtn:hover {
@@ -364,40 +392,57 @@ footer {
         width: 100%;
         justify-content: center;
         margin-bottom: 1vh;
-        flex-wrap: wrap;
-        gap: 1vh;
+        flex-wrap: nowrap;
+        gap: 0.5vh;
     }
     
     .search-container input[type="text"] {
-        width: 70%;
-        max-width: 250px;
+        width: auto;
+        flex: 3;
+        max-width: none;
         order: 1;
     }
     
-    .search-container button:not(.dropbtn) {
-        width: 70%;
-        max-width: 250px;
+    #search-btn {
+        width: auto;
+        min-width: auto;
+        padding: 1vh 1vw;
+        font-size: 0.9rem;
         order: 2;
+        flex-shrink: 0;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
     
     .dropdown {
         order: 3;
-        width: 70%;
-        max-width: 250px;
+        width: 20%;
+        max-width: 80px;
         display: flex;
         justify-content: center;
-        margin-top: 0.5vh;
+        margin-top: 0;
     }
     
     .dropbtn {
         width: 100%;
         text-align: center;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
     
     .dropdown-content {
-        right: 50%;
-        transform: translateX(50%);
+        right: 0;
+        left: auto;
+        transform: none;
         min-width: 140px;
+        position: absolute;
+        top: 100%;
     }
     
     header nav a {
@@ -427,34 +472,45 @@ footer {
 
 @media (max-width: 480px) {
     .search-container {
-        flex-direction: column;
-        gap: 1vh;
+        flex-direction: row;
+        gap: 0.5vh;
         align-items: center;
     }
     
     .search-container input[type="text"] {
-        width: 90%;
-        max-width: 280px;
+        width: auto;
+        flex: 3;
+        max-width: none;
         order: 1;
     }
     
-    .search-container button:not(.dropbtn) {
-        width: 90%;
-        max-width: 280px;
+    #search-btn {
+        width: auto;
+        min-width: auto;
+        padding: 1vh 1vw;
+        font-size: 0.9rem;
         order: 2;
+        flex-shrink: 0;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
     
     .dropdown {
         order: 3;
-        width: 90%;
-        max-width: 280px;
+        width: 20%;
+        max-width: 80px;
     }
     
     .dropdown-content {
-        left: 0;
         right: 0;
+        left: auto;
         transform: none;
-        min-width: auto;
+        min-width: 140px;
+        position: absolute;
+        top: 100%;
     }
     
     #main-nav.mobile-open {

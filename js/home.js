@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (randomRecipes.length > 0) {
             messageBox.style.display = 'none';
             recipeGrid.innerHTML = randomRecipes.map(recipe => `
-                <div class="recipe-card ${recipe.tags && recipe.tags.includes('parrilla') ? 'parrilla' : ''}">
+                <a href="pages/recipe.html?search=${recipe.id}" class="recipe-card ${recipe.tags && recipe.tags.includes('parrilla') ? 'parrilla' : ''}" aria-label="Ver receta de ${recipe.title}">
                     <input type="hidden" class="recipe-id" value="${recipe.id}">
                     <div class="recipe-card-content">
-                        <h3 class="recipe-title"><a href="pages/recipe.html?search=${recipe.id}">${recipe.title}</a></h3>
+                        <h3 class="recipe-title">${recipe.title}</h3>
                         ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
                     </div>
                     <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image">
-                </div>
+                </a>
             `).join('');
         } else {
             messageBox.style.display = 'block';

@@ -51,6 +51,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         if (isRecipeListPage) {
+            // Update page title based on category
+            if (category) {
+                const categoryTitles = {
+                    'principales': 'Platos Principales',
+                    'entradas': 'Entradas', 
+                    'postres': 'Postres',
+                    'parrilla': 'Parrilla'
+                };
+                document.title = categoryTitles[category] || `Categoría: ${category}`;
+            }
+
             // RECIPE LIST PAGE - Fill recipe-grid with filtered results
             const recipeGrid = document.getElementById('recipe-grid');
             const messageBox = document.getElementById('no-results-message');

@@ -506,8 +506,8 @@ footer {
         order: 3;
         display: flex;
         justify-content: center;
-        width: 20%;
-        max-width: 110px;
+        width: 25%;
+        max-width: 130px;
         margin-top: 0;
     }
 
@@ -515,6 +515,9 @@ footer {
         width: 100%;
         padding: 1vh 1vw;
         text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .dropdown-content {

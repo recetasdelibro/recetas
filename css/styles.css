@@ -347,13 +347,13 @@ footer {
         flex: 1;
         justify-content: center;
         width: auto;
-        max-width: 400px;
+        max-width: 500px;
         margin: 0;
     }
 
     .search-container input[type="text"] {
         flex: none;
-        width: 200px;
+        width: 300px;
         min-width: 150px;
     }
 
@@ -492,7 +492,7 @@ footer {
 
     .search-container input[type="text"] {
         order: 1;
-        flex: 3;
+        flex: 2;
         width: auto;
         max-width: none;
     }
@@ -506,8 +506,8 @@ footer {
         order: 3;
         display: flex;
         justify-content: center;
-        width: 20%;
-        max-width: 125px;
+        width: 28%;
+        max-width: 130px;
         margin-top: 0;
     }
 

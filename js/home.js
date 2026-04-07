@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             return shuffled.slice(0, Math.min(count, shuffled.length));
         }
 
-        const randomRecipes = getRandomRecipes(recipes, 5);
+        const randomRecipes = getRandomRecipes(recipes, 8);
         const recipeGrid = document.getElementById('featured-recipe-grid');
         const messageBox = document.getElementById('no-results-message');
 

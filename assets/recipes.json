@@ -1253,4 +1253,48 @@
     "tags": ["postre", "manzana", "argentina"],
     "book": "Cocina sin excusas - Pablo Massey",
     "servings": 4
+  },
+  {
+    "id": 24,
+    "title": "ESCALIVADA",
+    "ingredients": [
+      {
+        "name": "aceite de oliva"
+      },
+      {
+        "name": "cebolla"
+      },
+      {
+        "name": "berenjena"
+      },
+      {
+        "name": "morrón amarillo"
+      },
+      {
+        "name": "morrón rojo"
+      },
+      {
+        "name": "morrón verde"
+      },
+      {
+        "name": "pimienta"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "tomate"
+      }
+    ],
+    "procedure": [
+      "Lavar y desinfectar todos los vegetales.",
+      "Pelar la cebolla y  dentro de un papel aluminio colocar la cabeza de ajo junto al aceite de oliva y la sal. Envolver todo el ajo y cerrar.",
+      "Colocar los vegetales enteros y el ajo a fuego fuerte en el horno en una bandeja, que quede cocido y un poco quemado. Hacer tiras y/o rodajas con los vegetales.",
+      "Rociar con aceite de oliva y salpimentar a gusto. Se puede comer frío, tibio, como quieras.",
+      "Opcionalmente untar el pan tostado con la pasta de ajo. Y colocar los vegetales asados encima."
+    ],
+    "image": "/recetas/assets/images/recipes/escalivada.jpg",
+    "flag": "/recetas/assets/images/flags/espa±a.png",
+    "tags": ["entrada", "veggie", "española"],
+    "book": "Anti recetas - Marcos Di Cesare"
   }]

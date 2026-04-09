@@ -1297,4 +1297,47 @@
     "flag": "/recetas/assets/images/flags/espa±a.png",
     "tags": ["entrada", "veggie", "española"],
     "book": "Anti recetas - Marcos Di Cesare"
+  },
+  {
+    "id": 25,
+    "title": "SOPA DE CEBOLLA",
+    "ingredients": [
+      {
+        "name": "caldo"
+      },
+      {
+        "name": "cebolla"
+      },
+      {
+        "name": "manteca"
+      },
+      {
+        "name": "pan"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "vino blanco"
+      },
+      {
+        "name": "queso gruyere"
+      },
+      {
+        "name": "harina"
+      }
+    ],
+    "procedure": [
+      "Cortar la cebolla en corte pluma.",
+      "Fundir manteca en una olla. Esperar a que tome un color castaño. Echar la cebolla y revolver para que se impregne a la manteca, salar.",
+      "Dejarla en fuego mínimo hasta que se haga una mermelada. Cuando tenga un color marrón oscuro agregar media taza de vino blanco.",
+      "Cuaando dejes de sentir el olor a alcohol, agregar un poco de harina para espesar y mezclar.",
+      "Sumar caldo oscuro, o sea a base de carne. Esperar a que se reduzca a la mitad.",
+      "Ponemos la sopa en un lugar apto para horno junto a una rodaja de pan por encima, que abarque lo más posible.",
+      "Colocamos el queso rallado sobre el pan y gratinamos a horno fuerte."
+    ],
+    "image": "/recetas/assets/images/recipes/sopa_cebolla.jpg",
+    "flag": "/recetas/assets/images/flags/francia.png",
+    "tags": ["entrada", "cebolla", "veggie", "francesa"],
+    "book": "Anti recetas - Marcos Di Cesare"
   }]

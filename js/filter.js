@@ -52,14 +52,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (isRecipeListPage) {
             // Update page title based on category
+            const categoryTitles = {
+                'principales': 'Principales',
+                'entradas': 'Entradas', 
+                'postres': 'Postres',
+                'parrilla': 'Parrilla'
+            };
+            
             if (category) {
-                const categoryTitles = {
-                    'principales': 'Platos Principales',
-                    'entradas': 'Entradas', 
-                    'postres': 'Postres',
-                    'parrilla': 'Parrilla'
-                };
                 document.title = categoryTitles[category] || `Categoría: ${category}`;
+                const categoryTitleElement = document.getElementById('category-title');
+                if (categoryTitleElement) {
+                    categoryTitleElement.textContent = categoryTitles[category] || `Categoría: ${category}`;
+                }
+            } else {
+                document.title = 'Recetas';
+                const categoryTitleElement = document.getElementById('category-title');
+                if (categoryTitleElement) {
+                    categoryTitleElement.textContent = 'Recetas';
+                }
             }
 
             // RECIPE LIST PAGE - Fill recipe-grid with filtered results

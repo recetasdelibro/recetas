@@ -2,10 +2,11 @@
 <html lang="es">
 <script src="../js/search.js"></script>
 <script src="../js/category.js"></script>
+<script src="../js/review_filter.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
+    <title>Reseñas</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
 <header>
     <div class="header-top">
         <img src="/recetas/assets/images/logo.jpg" alt="Logo" class="logo">
-        <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn">></button>
     </div>
 
     <!-- Search bar -->
@@ -41,21 +42,13 @@
     </nav>
 </header>
 
-<!-- MAIN -->
 <main>
-    <h2>Sobre este sitio</h2>
-
-    <p>Este sitio nació con la intención de compartir mi pasión por la cocina. He dedicado parte de estos últimos años, aproximadamente postpandemia, a la cocina con el fin de adquirir nuevas habilidades y sabores para mi día a día.</p>
-
-    <p>A su vez nació una pasión paralela, coleccionar recetas de forma física. Libros y fascículos, de a montones, parecía no tener fin mi colección pero dado el contexto actual tuve que ponerle un freno aunque sea momentáneo.</p>
-
-    <p>Actualmente poseo 22 libros y 22 fascículos (espero seguir juntando), de muchos de chefs de renombre. Cada vez que me tomo un tiempo ya sea para hojearlos o tomar alguna receta para hacer, no puedo evitar fascinarme al ver la dedicación, la complejidad y la mezcla de sabores que ofrecen su lectura.</p>
-
-    <p>Nuestro paladar es sumamente pequeño, diminuto. Estamos tan arraigados a "lo de siempre" que no nos damos cuenta que es cuestión de dar un pequeño paso para elevar nuestro sentido culinario.</p>
-
-    <p>Es por eso que decidí recopilar las recetas de mi tesoro literario (no todos fueron comprados, varios son regalos de gente muy querida por mí). Intentaré detallar lo mejor posible el proceso a fines de no menospreciar el trabajo que han hecho los autores y editoriales por su contenido.</p>
-
-    <p>Muchas gracias y disfruten del viaje =)</p>
+    <h1 id="category-title">Reseñas</h1>
+    <div id="recipe-grid" class="recipe-grid">
+    </div>
+    <div id="no-results-message" style="display: none; text-align: center; margin-top: 20px;">
+        No se encontraron reseñas.
+    </div>
 </main>
 
 <script src="../js/mobile-menu.js"></script>

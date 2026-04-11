@@ -52,7 +52,7 @@
   "image": "/recetas/assets/images/recipes/focaccia.png",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["pan", "italiana", "tomate"],
-  "book": "Tomate",
+  "book": "Senttia - tomate - Catapulta",
   "servings": 8
 },
 {
@@ -114,7 +114,7 @@
   "image": "/recetas/assets/images/recipes/bruschetta.jfif",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["pan", "italiana", "tomate"],
-  "book": "Tomate",
+  "book": "Senttia - tomate - Catapulta",
   "servings": 6
 },
 {
@@ -176,7 +176,7 @@
   "image": "/recetas/assets/images/recipes/ensalada_mediterranea.png",
   "flag": "/recetas/assets/images/flags/italia.png",
   "tags": ["ensalada", "italiana", "tomate"],
-  "book": "Tomate",
+  "book": "Senttia - tomate - Catapulta",
   "servings": 3
 },
 {
@@ -1405,5 +1405,6 @@
     "image": "/recetas/assets/images/recipes/goulash_spaetzle.jpg",
     "flag": "/recetas/assets/images/flags/hungria.png",
     "tags": ["principal", "pastas", "carne", "hungara"],
-    "book": "Las mejores recetas de masticar - Atlantida"
+    "book": "Las mejores recetas de masticar - Atlantida",
+    "servings": 20
   }]

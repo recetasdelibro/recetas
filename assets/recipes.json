@@ -1407,4 +1407,97 @@
     "tags": ["principal", "pastas", "carne", "hungara"],
     "book": "Las mejores recetas de masticar - Atlantida",
     "servings": 20
+  },
+  {
+    "id": 27,
+    "title": "BONIATO CON CERDO BRASEADO",
+    "ingredients": [
+      {
+        "name": "boniato",
+        "quantity": 4
+      },
+      {
+        "name": "salsa chile",
+        "quantity": 6,
+        "unit": "cdas"
+      },
+      {
+        "name": "carne de cerdo",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "miel",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "caldo",
+        "quantity": 1,
+        "unit": "taza"
+      },
+      {
+        "name": "choclo",
+        "quantity": 1
+      },
+      {
+        "name": "verdeo",
+        "quantity": 2
+      },
+      {
+        "name": "cebolla",
+        "quantity": 1
+      },
+      {
+        "name": "yogurt griego",
+        "quantity": 3,
+        "unit": "cdas"
+      },
+      {
+        "name": "aceite de oliva"
+      },
+      {
+        "name": "hinojo en pickle",
+        "quantity": "1/2"
+      },
+      {
+        "name": "laurel",
+        "quantity": "1",
+        "unit": "hoja"
+      },
+      {
+        "name": "vinagre",
+        "quantity": "1",
+        "unit": "taza"
+      },
+      {
+        "name": "azúcar",
+        "quantity": "3",
+        "unit": "cdas"
+      },
+      {
+        "name": "estrella anís",
+        "quantity": "1"
+      }
+    ],
+    "procedure": [
+      "Limpiar con un chorro de agua los boniatos y cepillar su cáscara.",
+      "Cocinar al vapor aproximadamente 1 hora, hast que queden cocidas y cremosas. Reservar.",
+      "Salpimentar el cerdo. Dorar ambos lados.",
+      "Calentar la carne en un recipiente profundo junto al caldo oscuro ( a base de carne ) y la miel durante 3 hs tapada y cada 30 minutos bañar la carne. Cuando se desarme la carne está listo.",
+      "Dejar enfriar, quittar los huesos, si tiene, y desmenuzar. Guardar el fondo de la cocción",
+      "Lavar y pelar el choclo, cocinar con agua hervida por 8 minutos. Luego quemarlo en una sartén o parrilla y desgranar con un cuchillo.",
+      "Salpimentar el yogurt y agregarle un poco de aceite de oliva.",
+      "Lavar y pelar la cebolla, cortarla tipo pluma. Enharinar y freir hasta dejarlas crocantes. Secar y salar.",
+      "Para los pickles, lavar el hinojo, quitar el centro y la parte dura y cortar en juliana fina.",
+      "Hervir en conjunto el vinagre, azúcar, sal, el anís y la pimienta. Retirar al hervir y dejar enfriar.",
+      "Volcar sobre el hinojo. Reservar.",
+      "Cortar el verdeo en juliana y lavar varias veces. Escurrir y secar.",
+      "Para armar el plato, cortar el boniato por la mitad, colocar el cerdo braseado con un poco de salsa de chile, los granos de choclo, la cebolla frita, el yogurt, los pickles y el verdeo."
+    ],
+    "image": "/recetas/assets/images/recipes/cerdo_boniato.jfif",
+    "flag": "/recetas/assets/images/flags/peru.png",
+    "tags": ["principal", "cerdo", "peruana"],
+    "book": "Las mejores recetas de masticar - Atlantida",
+    "servings": 8
   }]

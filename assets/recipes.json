@@ -1485,7 +1485,7 @@
       "Cocinar al vapor aproximadamente 1 hora, hast que queden cocidas y cremosas. Reservar.",
       "Salpimentar el cerdo. Dorar ambos lados.",
       "Calentar la carne en un recipiente profundo junto al caldo oscuro ( a base de carne ) y la miel durante 3 hs tapada y cada 30 minutos bañar la carne. Cuando se desarme la carne está listo.",
-      "Dejar enfriar, quittar los huesos, si tiene, y desmenuzar. Guardar el fondo de la cocción",
+      "Dejar enfriar, quittar los huesos, si tiene, y desmenuzar. Guardar el fondo de la cocción.",
       "Lavar y pelar el choclo, cocinar con agua hervida por 8 minutos. Luego quemarlo en una sartén o parrilla y desgranar con un cuchillo.",
       "Salpimentar el yogurt y agregarle un poco de aceite de oliva.",
       "Lavar y pelar la cebolla, cortarla tipo pluma. Enharinar y freir hasta dejarlas crocantes. Secar y salar.",
@@ -1500,4 +1500,40 @@
     "tags": ["principal", "cerdo", "peruana"],
     "book": "Las mejores recetas de masticar - Atlantida",
     "servings": 8
+  },
+  {
+    "id": 28,
+    "title": "FLAN",
+    "ingredients": [
+      {
+        "name": "azúcar"
+      },
+      {
+        "name": "huevos"
+      },
+      {
+        "name": "leche"
+      },
+      {
+        "name": "vainilla"
+      },
+      {
+        "name": "yemas"
+      }
+    ],
+    "procedure": [
+      "Prender el horno en mínimo.",
+      "Disponer de un recipiente grande para usarlo de base para el baño maría.",
+      "Poner la leche y el azúcar en una olla, calentar hasta 60º.",
+      "Mientras se deja calentar, en una sartén colocar 2 cucharadas grandes de azúcar a fuego mínimo. Cuando se derrita, agregar más. Hasta que pueda cubir el fondo de la flanera.",
+      "Una vez que la leche esta en su punto ( podés sacar un poquito y sentir con el dedo, si está calentito pero no quema esta bien ). Agregar los huevos, las yemas y la escencia de vainilla ( si podés usar vainas, mejor ).",
+      "Colocar el caramelo líquido en la flanera, bien esparcido y colocar la mezcla. Cocinar a baño maría.",
+      "Cocinar aproximadamente por 1 hora a fuego bajo y luego otra hora con el horno apagado.",
+      "Con un palillo, mirar que al pinchar salga seco. Dejar enfriar a temperatura ambiente y reservar en la heladera por 8 horas al menos.",
+      "Retirar, desmoldar y servir."
+    ],
+    "image": "/recetas/assets/images/recipes/flan.jfif",
+    "flag": "/recetas/assets/images/flags/argentina.png",
+    "tags": ["postre", "argentina"],
+    "book": "Anti recetas - Marcos Di Cesare"
   }]

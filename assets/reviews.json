@@ -87,5 +87,22 @@
       "Dada su variedad de recetas y su perspectiva culinaria, este libro es ideal para quienes quieren dar un paso serio dentro del mundo de la gastronomía."
     ],
     "image": "/recetas/assets/images/books/anti_recetas.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Food truck - Pham, Shen y Phillips",
+    "review": [
+      "Cómo se dice cuando crees saber cómo es un lugar al que nunca fuiste?",
+      "Bueno, eso me hace sentir el libro de esta reseña: food truck de Pham, Shen y Phillips ( y seguro otros de mis libros me hacen sentir igual ).",
+      "Desde USA con amor, el trío de Pham, Shen y Phillips se aventura en el corazón de las carreteras de su país con el objetivo de brindarnos las mejores recetas de puestos callejeros notorios en su lugar de origen.",
+      "Comienza con un prólogo sobre el auge de los food trucks y luego una introducción sobre el proyecto del blog y el libro en sí.",
+      "El libro cuenta con una serie de capítulos donde reflejan un tipo de comida en particular, que son: americana ( de USA ) con un toque renovado con 11 recetas que incluyen hamburguesas, pollo frito y Mac and cheese; sándwiches en general ( 13 recetas ) con clásicos como el phillycheese, lobster roll, bacon con queso, etc; chiles y sopas ( 7 recetas ) a mis ojos nada que parezca típico; Veggie ( 10 recetas ) variado, sándwich, ensalada, hamburguesa, hot dog, etc; y ahora sí, lo que le dan la identidad también al país, la inmigración; latino ( 6 recetas ) ceviche, arepas, lomo saltado, etc; y no me cierres el aeropuerto que seguimos viajando; Asia ( 9 recetas ), kimchi, curry japonés, paranthas y más; pásame el pasaporte intergaláctico que también tenemos fusión ( 12 recetas ) empanadas de morcilla, hot dogs con algas, bacon y piña, taco pad Thai y más; guarniciones ( 10 recetas ) clásicos como poutine y kebab entre otros; 6 bebidas, café, te, jugos, licuados, etc; dulces ( 9 recetas ); 7 palitos de helado y finaaaaalmeeeenteee 4 salsas/aderezos.",
+      "Cada uno de los capítulos muestra a un food truck principal, del cual muestran su historia en detalle. Luego aparecen las recetas con sus porciones, ingredientes y procedimientos junto a una pequeña descripción del food truck.",
+      "Quizás algunos procesos requieren alguna herramienta puntual, pero son los menos.",
+      "Los pasos manejan una complejidad baja dónde no parece necesario el tip del chef.",
+      "A pesar de la diversidad culinaria, varios ingredientes se hacen notar para su público local. Pero tranquilos que variantes no faltan para tener un resultado idéntico.",
+      "El libro es lo que promete y por eso su precio es gama media-alta. Comida sencilla de comer, sabrosa, variada y con sabor a aventura de las legendarias carreteras de Estados Unidos."
+    ],
+    "image": "/recetas/assets/images/books/food_truck.jpg"
   }
 ]

@@ -1536,4 +1536,132 @@
     "flag": "/recetas/assets/images/flags/argentina.png",
     "tags": ["postre", "argentina"],
     "book": "Anti recetas - Marcos Di Cesare"
+  },
+  {
+    "id": 29,
+    "title": "COLITA DE CUADRIL CON AJÍ Y PEREJIL",
+    "ingredients": [
+      {
+        "name": "cola de cuadril",
+        "quantity": 2,
+        "unit": "kg"
+      },
+      {
+        "name": "sal",
+        "quantity": 1,
+        "unit": "cda"
+      },
+      {
+        "name": "pimienta",
+        "quantity": 2,
+        "unit": "cdas"
+      },
+      {
+        "name": "ají picado",
+        "quantity": 1
+      },
+      {
+        "name": "dientes de ajo",
+        "quantity": 3
+      },
+      {
+        "name": "perejil",
+        "quantity": "1/2"
+      }
+    ],
+    "procedure": [
+      "Cortar la carne a lo largo, como si fuera un libro abierto. Salpimentar y tirar el ají y el perejil picados y el ajo en láminas.",
+      "Doblar la carne y que quede todo adentro. Atar o pinchar con palitos para que no se desarme.",
+      "Asar sobre la parrilla vuelta y vuelta, 15 minutos de cada lado con la intensidad del fuego según el punto deseado."
+    ],
+    "image": "/recetas/assets/images/recipes/colita_cuadril.jpg",
+    "flag": "/recetas/assets/images/flags/españa.png",
+    "tags": ["carne", "española", "parrilla"],
+    "book": "Lo mejor de la parrilla - Lexus"
+  },
+  {
+    "id": 30,
+    "title": "ASADO DE TIRA AL VINO TINTO",
+    "ingredients": [
+      {
+        "name": "asado de tira",
+        "quantity": 2,
+        "unit": "kg"
+      },
+      {
+        "name": "aceite vegetal",
+        "quantity": 4,
+        "unit": "cdas"
+      },
+      {
+        "name": "cebolla roja",
+        "quantity": 2
+      },
+      {
+        "name": "diente de ajo",
+        "quantity": 4
+      },
+      {
+        "name": "vino tinto",
+        "quantity": 2,
+        "unit": "tazas"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      }
+    ],
+    "procedure": [
+      "Hacer la marinada con todos los ingredientes y agua, menos con la carne.",
+      "Meter la carne dentro de un recipiente con la marinada y dejarlo 1 hora dentro de la heladera.",
+      "Sacar la carne y ponerla sobre la parrilla caliente con el hueso hacia abajo. Pincelar con la marinada y cocinar al punto deseado por ambos lados."
+    ],
+    "image": "/recetas/assets/images/recipes/asado_tira_vino_tinto.jpg",
+    "flag": "/recetas/assets/images/flags/españa.png",
+    "tags": ["parrilla", "carne", "española"],
+    "book": "Lo mejor de la parrilla - Lexus"
+  },
+  {
+    "id": 31,
+    "title": "MOLLEJAS PARRILLERAS CON LIMÓN",
+    "ingredients": [
+      {
+        "name": "mollejas de pollo",
+        "quantity": 1,
+        "unit": "kg"
+      },
+      {
+        "name": "vino blanco",
+        "quantity": 2,
+        "unit": "tazas"
+      },
+      {
+        "name": "limones",
+        "quantity": 6
+      },
+      {
+        "name": "mostaza en grano",
+        "quantity": 2,
+        "unit": "cdas"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "pimienta"
+      }
+    ],
+    "procedure": [
+     "Limpiar bien las mollejas y ponerlas en un colador. Cocinarlas en agua hirviendo con sal, dentro del colador por unos instantes. Escurrir y reservar.",
+      "Tirar el vino en una olla aparte y reducir hasta la mitad.",
+      "Sacar del fuego y mezclar con la mostaza y el jugo de los 6 limones. Salpimentar.",
+      "Asar las mollejas hasta dorarlas y durante la cocción rociar con  un poco de la mezcla de vino.",
+      "Servir caliente."
+    ],
+    "image": "/recetas/assets/images/recipes/mollejas_pollo_limon.jfif",
+    "flag": "/recetas/assets/images/flags/españa.png",
+    "tags": ["parrilla", "pollo", "española"],
+    "book": "Lo mejor de la parrilla - Lexus"
   }]

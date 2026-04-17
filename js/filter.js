@@ -34,6 +34,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return recipe.tags && recipe.tags.some(tag =>
                     tag.toLowerCase() === 'parrilla'
                 );
+            } else if (category === 'salsas') {
+                return recipe.tags && recipe.tags.some(tag =>
+                    tag.toLowerCase() === 'salsa'
+                );
             }
 
             return true;
@@ -56,7 +60,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 'principales': 'Principales',
                 'entradas': 'Entradas', 
                 'postres': 'Postres',
-                'parrilla': 'Parrilla'
+                'parrilla': 'Parrilla',
+                'salsas': 'Salsas'
             };
             
             if (category) {

@@ -1664,4 +1664,123 @@
     "flag": "/recetas/assets/images/flags/españa.png",
     "tags": ["parrilla", "pollo", "española"],
     "book": "Lo mejor de la parrilla - Lexus"
+  },
+  {
+    "id": 32,
+    "title": "ALIOLI",
+    "ingredients": [
+      {
+        "name": "huevo",
+        "quantity": 1
+      },
+      {
+        "name": "diente de ajo",
+        "quantity": 1
+      },
+      {
+        "name": "aceite de oliva",
+        "quantity": 2,
+        "unit": "cdas"
+      },
+      {
+        "name": "aceite vegetal"
+      }
+    ],
+    "procedure": [
+      "Pelar el ajo y picarlo. Luego mezclar todo excepto el aceite vegetal.",
+      "Usando una pymer o procesadora, procesar al mínimo. Mientras, tirar un hilo de aceite hasta que espese sin dejar de procesar.",
+      "Verter en un bowl y servir a temperatura ambiente."
+    ],
+    "image": "/recetas/assets/images/recipes/alioli.jpg",
+    "flag": "/recetas/assets/images/flags/españa.png",
+    "tags": ["salsa", "española"],
+    "book": "Lo mejor de la parrilla - Lexus"
+  },
+  {
+    "id": 33,
+    "title": "VINAGRETA CON YOGUR",
+    "ingredients": [
+      {
+        "name": "yogur natural",
+        "quantity": 4,
+        "unit": "cdas"
+      },
+      {
+        "name": "diente de ajo",
+        "quantity": 1
+      },
+      {
+        "name": "jugo de limón",
+        "quantity": 1,
+        "unit": "cdita"
+      },
+      {
+        "name": "mostaza",
+        "quantity": 1,
+        "unit": "cdita"
+      },
+      {
+        "name": "sal"
+      },
+      {
+        "name": "aceite de oliva",
+        "quantity": "1/4",
+        "unit": "taza"
+      }
+    ],
+    "procedure": [
+      "Pelar el ajo y picarlo. Luego mezclar todo excepto el aceite de oliva.",
+      "Batir todo. Mientras, tirar un hilo de aceite hasta que emulsione.",
+      "Verter en un bowl y servir a temperatura ambiente."
+    ],
+    "image": "/recetas/assets/images/recipes/vinagreta_yogur.jpg",
+    "flag": "/recetas/assets/images/flags/grecia.png",
+    "tags": ["salsa", "griega"],
+    "book": "Lo mejor de la parrilla - Lexus"
+  },
+  {
+    "id": 34,
+    "title": "SALSA TÁRTARA",
+    "ingredients": [
+      {
+        "name": "mayonesa",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "huevo cocido",
+        "quantity": 1
+      },
+      {
+        "name": "alcaparras",
+        "quantity": 25,
+        "unit": "g"
+      },
+      {
+        "name": "pepinillos",
+        "quantity": 25,
+        "unit": "g"
+      },
+      {
+        "name": "cebolla",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "name": "mostaza",
+        "quantity": 1,
+        "unit": "cdita"
+      },
+      {
+        "name": "perejil"
+      }
+    ],
+    "procedure": [
+      "Picar el perejil, la cebolla, los pepinillos y las alcaparras finamente.",
+      "Mezclar todos los ingredientes en un bowl hasta integrar."
+    ],
+    "image": "/recetas/assets/images/recipes/salsa_tartara.jfif",
+    "flag": "/recetas/assets/images/flags/francia.png",
+    "tags": ["salsa", "francesa"],
+    "book": "Lo mejor de la parrilla - Lexus"
   }]

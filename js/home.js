@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk';
-        const response = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*&apikey=' + API_KEY);
+        
+        // Fetch only 8 recipes with essential fields to minimize data transfer
+        const response = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=id,title,image,flag,tags&limit=8&apikey=' + API_KEY);
         const recipes = await response.json();
-
-        // Función para obtener N elementos aleatorios
+        
+        // Get 8 random recipes from the limited set
         function getRandomRecipes(recipes, count) {
             const shuffled = [...recipes].sort(() => Math.random() - 0.5);
             return shuffled.slice(0, Math.min(count, shuffled.length));
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <h3 class="recipe-title">${recipe.title}</h3>
                         ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
                     </div>
-                    <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image">
+                    <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image" loading="lazy">
                 </a>
             `).join('');
         } else {

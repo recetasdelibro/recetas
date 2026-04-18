@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <h3 class="recipe-title">${recipe.title}</h3>
                             ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
                         </div>
-                        <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image">
+                        <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image" loading="lazy">
                     </a>
                 `).join('');
             } else {

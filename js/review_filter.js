@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="recipe-card-content">
                             <h3 class="recipe-title">${review.title}</h3>
                         </div>
-                        <img src="${review.image}" alt="${review.title}" class="recipe-card-image">
+                        <img src="${review.image}" alt="${review.title}" class="recipe-card-image" loading="lazy">
                     </a>
                 `).join('');
             } else {

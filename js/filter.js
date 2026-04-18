@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        // Initialize Supabase client
+        const { createClient } = window.supabase;
+        const supabaseClient = createClient(
+            'https://hazeaoafnztxidkgdwsn.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk'
+        );
+
         const params = new URLSearchParams(window.location.search);
         const searchTerm = params.get('search')?.toLowerCase() || "";
         const category = params.get('category')?.toLowerCase() || "";
@@ -11,8 +18,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk';
         
-        const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*&apikey=${API_KEY}`);
-        const recipes = await response.json();
+        let recipes;
+        
+        if (searchTerm && searchTerm.length >= 3) {
+            // Use Supabase RPC fuzzy search for text search
+            const { data, error } = await supabaseClient.rpc('buscar_recetas_fuzzy', { 
+                search_term: searchTerm 
+            });
+            
+            if (error) {
+                console.error('Error en búsqueda fuzzy:', error);
+                recipes = [];
+            } else {
+                recipes = data || [];
+            }
+        } else {
+            // Regular fetch for no search or short search terms
+            const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*&apikey=${API_KEY}`);
+            recipes = await response.json();
+        }
 
         // Category filtering function
         const filterByCategory = (recipe, category) => {
@@ -84,10 +108,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const recipeGrid = document.getElementById('recipe-grid');
             const messageBox = document.getElementById('no-results-message');
 
-            // Filter recipes using separated functions
+            // Filter recipes - skip text search if using fuzzy search results
             const filteredRecipes = recipes.filter(r => {
                 const categoryMatch = filterByCategory(r, category);
-                const searchMatch = filterBySearch(r, searchTerm);
+                // If we used fuzzy search, don't apply text search filter again
+                const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
                 return categoryMatch && searchMatch;
             });
 
@@ -119,7 +144,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const recipe = recipes.find(r => {
                 const categoryMatch = filterByCategory(r, category);
-                const searchMatch = filterBySearch(r, searchTerm);
+                // If we used fuzzy search, don't apply text search filter again
+                const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
                 return categoryMatch && searchMatch;
             });
 

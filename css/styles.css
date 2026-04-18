@@ -268,7 +268,7 @@ footer {
 }
 
 .recipe-card.parrilla {
-    background-image: url('/recetas/assets/images/logo_parrilla.png');
+    background-image: url('/recetas/assets/images/logo_parrilla.jpg');
 }
 
 .recipe-card::before {

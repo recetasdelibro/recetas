@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('/recetas/assets/recipes.json');
+        const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk';
+        const response = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*&apikey=' + API_KEY);
         const recipes = await response.json();
 
         // Función para obtener N elementos aleatorios

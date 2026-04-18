@@ -6,9 +6,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Get current page to determine which functionality to use
         const currentPage = window.location.pathname;
         const isReviewListPage = currentPage.includes('review_list.html');
-        const isReviewPage = currentPage.includes('review.html') && !isReviewListPage;
+        const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk';        const isReviewPage = currentPage.includes('review.html') && !isReviewListPage;
 
-        const response = await fetch('/recetas/assets/reviews.json');
+        // Build different queries for list page vs individual review page
+        let supabaseQuery;
+        if (isReviewListPage) {
+            // For list page, fetch all reviews (will be filtered client-side)
+            supabaseQuery = `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/reviews?select=*&apikey=${API_KEY}`;
+        } else {
+            // For individual review page, filter by ID
+            supabaseQuery = `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/reviews?id=eq.${searchTerm}&apikey=${API_KEY}`;
+        }
+        
+        const response = await fetch(supabaseQuery);
         const reviews = await response.json();
 
         // Search filtering function

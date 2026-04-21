@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return recipe.tags && recipe.tags.some(tag =>
                     tag.toLowerCase() === 'salsa'
                 );
+            } else if (category === 'pastas') {
+                return recipe.tags && recipe.tags.some(tag =>
+                    tag.toLowerCase() === 'pasta'
+                );
             }
 
             return true;
@@ -87,7 +91,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 'entradas': 'Entradas', 
                 'postres': 'Postres',
                 'parrilla': 'Parrilla',
-                'salsas': 'Salsas'
+                'salsas': 'Salsas',
+                'pastas': 'Pastas'
             };
             
             if (category) {

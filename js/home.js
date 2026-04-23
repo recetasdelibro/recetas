@@ -34,5 +34,64 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         console.error('Error loading recipes:', error);
     }
+
+    // Modal functionality
+    const filtrosBtn = document.getElementById('filtros-btn');
+    const modal = document.getElementById('filtros-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const filtrarBtn = document.getElementById('filtrar-btn');
+    const countriesContainer = document.getElementById('countries-container');
+
+    // Dynamically generate country checkboxes
+    const countries = ['Argentina', 'Canada', 'Colombia', 'Cuba', 'España', 'Francia', 'Grecia', 'Hungria', 'Italia', 'Peru', 'Usa'];
+
+    countries.forEach(country => {
+        const checkboxDiv = document.createElement('div');
+        checkboxDiv.className = 'country-checkbox';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `country-${country.toLowerCase()}`;
+        checkbox.value = country;
+        checkbox.name = 'country';
+
+        const label = document.createElement('label');
+        label.htmlFor = `country-${country.toLowerCase()}`;
+        label.textContent = country;
+
+        checkboxDiv.appendChild(checkbox);
+        checkboxDiv.appendChild(label);
+        countriesContainer.appendChild(checkboxDiv);
+    });
+
+    // Open modal
+    filtrosBtn.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Close modal with X button
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close modal with filtrar button and navigate to recipe_list
+    filtrarBtn.addEventListener('click', () => {
+        const checkedCountries = Array.from(document.querySelectorAll('input[name="country"]:checked'))
+            .map(checkbox => checkbox.value);
+
+        if (checkedCountries.length > 0) {
+            const countriesParam = checkedCountries.join(',');
+            window.location.href = `pages/recipe_list.html?countries=${encodeURIComponent(countriesParam)}`;
+        } else {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
 

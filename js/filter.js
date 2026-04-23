@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const params = new URLSearchParams(window.location.search);
         const searchTerm = params.get('search')?.toLowerCase() || "";
         const category = params.get('category')?.toLowerCase() || "";
+        const countriesParam = params.get('countries')?.toLowerCase() || "";
+        const selectedCountries = countriesParam ? countriesParam.split(',') : [];
 
         // Get current page to determine which functionality to use
         const currentPage = window.location.pathname;
@@ -76,12 +78,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Search filtering function
         const filterBySearch = (recipe, searchTerm) => {
             if (searchTerm.length < 3) return true;
-            
+
             const titleMatch = recipe.title.toLowerCase().includes(searchTerm);
             const ingredientMatch = recipe.ingredients.some(i =>
                 i.name.toLowerCase().includes(searchTerm)
             );
             return titleMatch || ingredientMatch;
+        };
+
+        // Country filtering function
+        const filterByCountry = (recipe, selectedCountries) => {
+            if (selectedCountries.length === 0) return true;
+
+            // Check if recipe country matches any selected country
+            if (recipe.country) {
+                const countryLower = recipe.country.toLowerCase();
+                return selectedCountries.some(country => countryLower.includes(country));
+            }
+            return false;
         };
 
         if (isRecipeListPage) {
@@ -118,7 +132,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const categoryMatch = filterByCategory(r, category);
                 // If we used fuzzy search, don't apply text search filter again
                 const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
-                return categoryMatch && searchMatch;
+                const countryMatch = filterByCountry(r, selectedCountries);
+                return categoryMatch && searchMatch && countryMatch;
             });
 
             // Display results
@@ -151,7 +166,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const categoryMatch = filterByCategory(r, category);
                 // If we used fuzzy search, don't apply text search filter again
                 const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
-                return categoryMatch && searchMatch;
+                const countryMatch = filterByCountry(r, selectedCountries);
+                return categoryMatch && searchMatch && countryMatch;
             });
 
             if (recipe) {

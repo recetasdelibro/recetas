@@ -31,33 +31,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             messageBox.style.display = 'block';
         }
-    } catch (error) {
-        console.error('Error loading recipes:', error);
-    }
 
-    // Modal functionality
-    const filtrosBtn = document.getElementById('filtros-btn');
-    const modal = document.getElementById('filtros-modal');
-    const closeBtn = document.querySelector('.close-btn');
-    const filtrarBtn = document.getElementById('filtrar-btn');
-    const countriesContainer = document.getElementById('countries-container');
+        // Modal functionality
+        const filtrosBtn = document.getElementById('filtros-btn');
+        const modal = document.getElementById('filtros-modal');
+        const closeBtn = document.querySelector('.close-btn');
+        const filtrarBtn = document.getElementById('filtrar-btn');
+        const countriesContainer = document.getElementById('countries-container');
 
-    // Dynamically generate country checkboxes
-    const countries = ['Argentina', 'Canada', 'Colombia', 'Cuba', 'España', 'Francia', 'Grecia', 'Hungria', 'Italia', 'Peru', 'Usa'];
+        // Dynamically generate country checkboxes
+        const countriesResponse = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/countries?select=id,name&apikey=' + API_KEY);
+        const countries = await countriesResponse.json();
 
-    countries.forEach(country => {
+        if (!countries || countries.length === 0) {
+            return;
+        }
+
+        countries.forEach(country => {
         const checkboxDiv = document.createElement('div');
         checkboxDiv.className = 'country-checkbox';
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.id = `country-${country.toLowerCase()}`;
-        checkbox.value = country;
+        checkbox.id = `country-${country.name.toLowerCase()}`;
+        checkbox.value = country.name;
         checkbox.name = 'country';
 
         const label = document.createElement('label');
-        label.htmlFor = `country-${country.toLowerCase()}`;
-        label.textContent = country;
+        label.htmlFor = `country-${country.name.toLowerCase()}`;
+        label.textContent = country.name;
 
         checkboxDiv.appendChild(checkbox);
         checkboxDiv.appendChild(label);
@@ -93,5 +95,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             modal.style.display = 'none';
         }
     });
+
+    } catch (error) {
+        console.error('Error loading recipes:', error);
+    }
 });
 

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const messageBox = document.getElementById('no-results-message');
 
         const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhemVhb2Fmbnp0eGlka2dkd3NuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NjEyOTEsImV4cCI6MjA5MjAzNzI5MX0.baG-JMojvCC7xEqRdUFcNSIt30lUOrNwvHqSYZM5nhk';
-        const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?id=eq.${recipeId}&apikey=${API_KEY}`);
+        const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?id=eq.${recipeId}&select=*,books(name)&apikey=${API_KEY}`);
         const recipes = await response.json();
 
         // Find recipe by id
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 .join('');
             
             // Add book information before footer if it exists
-            if (recipe.book) {
+            if (recipe.books && recipe.books.name) {
                 const bookElement = document.createElement('div');
-                bookElement.innerHTML = `<p><em>Fuente: ${recipe.book}</em></p>`;
+                bookElement.innerHTML = `<p><em>Fuente: ${recipe.books.name}</em></p>`;
                 bookElement.className = 'recipe-source-container';
                 
                 // Insert before the footer

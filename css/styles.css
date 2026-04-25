@@ -164,16 +164,18 @@ header nav a:hover {
 
 #countries-container {
     margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 8px;
+    padding: 10px;
 }
 
 .country-checkbox {
-    margin: 8px 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 5px 0;
 }
 
 .country-checkbox input[type="checkbox"] {
@@ -185,6 +187,35 @@ header nav a:hover {
     user-select: none;
 }
 
+#countries-dropdown {
+    display: none;
+    position: fixed;
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 4px;
+    background-color: var(--color-surface-soft);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+}
+
+#countries-dropdown.show {
+    display: block;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.modal-buttons > * {
+    width: auto;
+}
+
 #filtrar-btn {
     background-color: var(--color-primary);
     color: var(--color-text-inverse);
@@ -193,8 +224,24 @@ header nav a:hover {
     font-size: 0.9rem;
     cursor: pointer;
     border-radius: var(--radius-sm);
-    margin-top: 20px;
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
 }
+
+#countries-dropdown-btn {
+    background-color: black;
+    color: var(--color-text-inverse);
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+}
+
 
 /* Shared controls */
 .search-container {
@@ -659,6 +706,24 @@ footer {
 
     main {
         padding: 1vh 1vw;
+    }
+
+    /* Modal mobile styles */
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content #filtrar-btn,
+    .modal-content #countries-dropdown-btn {
+        width: 150px !important;
+        padding: 10px 20px !important;
+        white-space: nowrap;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

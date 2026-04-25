@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const closeBtn = document.querySelector('.close-btn');
         const filtrarBtn = document.getElementById('filtrar-btn');
         const countriesContainer = document.getElementById('countries-container');
+        const countriesDropdownBtn = document.getElementById('countries-dropdown-btn');
+        const countriesDropdown = document.getElementById('countries-dropdown');
 
         // Dynamically generate country checkboxes
         const countriesResponse = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/countries?select=id,name&apikey=' + API_KEY);
@@ -71,9 +73,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         modal.style.display = 'block';
     });
 
+    // Toggle countries dropdown
+    countriesDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const rect = countriesDropdownBtn.getBoundingClientRect();
+        countriesDropdown.style.top = `${rect.bottom + window.scrollY}px`;
+        countriesDropdown.style.left = `${rect.left + window.scrollX}px`;
+        countriesDropdown.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!countriesDropdownBtn.contains(e.target) && !countriesDropdown.contains(e.target)) {
+            countriesDropdown.classList.remove('show');
+        }
+    });
+
     // Close modal with X button
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
+        countriesDropdown.classList.remove('show');
     });
 
     // Close modal with filtrar button and navigate to recipe_list

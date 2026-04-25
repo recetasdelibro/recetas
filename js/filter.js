@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const params = new URLSearchParams(window.location.search);
         const searchTerm = params.get('search')?.toLowerCase() || "";
         const category = params.get('category')?.toLowerCase() || "";
-        const countriesParam = params.get('countries')?.toLowerCase() || "";
-        const selectedCountries = countriesParam ? countriesParam.split(',') : [];
+        const countriesParam = params.get('countries') || "";
+        const selectedCountries = countriesParam ? countriesParam.split(',').map(id => parseInt(id)) : [];
 
         // Get current page to determine which functionality to use
         const currentPage = window.location.pathname;
@@ -90,10 +90,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const filterByCountry = (recipe, selectedCountries) => {
             if (selectedCountries.length === 0) return true;
 
-            // Check if recipe country matches any selected country
-            if (recipe.country) {
-                const countryLower = recipe.country.toLowerCase();
-                return selectedCountries.some(country => countryLower.includes(country));
+            // Check if recipe id_country matches any selected country ID
+            if (recipe.id_country) {
+                return selectedCountries.includes(recipe.id_country);
             }
             return false;
         };

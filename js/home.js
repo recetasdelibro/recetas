@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.id = `country-${country.name.toLowerCase()}`;
-        checkbox.value = country.name;
+        checkbox.id = `country-${country.id}`;
+        checkbox.value = country.id;
         checkbox.name = 'country';
 
         const label = document.createElement('label');
-        label.htmlFor = `country-${country.name.toLowerCase()}`;
+        label.htmlFor = `country-${country.id}`;
         label.textContent = country.name;
 
         checkboxDiv.appendChild(checkbox);

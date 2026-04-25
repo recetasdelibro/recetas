@@ -40,33 +40,59 @@ document.addEventListener('DOMContentLoaded', async () => {
         const countriesContainer = document.getElementById('countries-container');
         const countriesDropdownBtn = document.getElementById('countries-dropdown-btn');
         const countriesDropdown = document.getElementById('countries-dropdown');
+        const booksContainer = document.getElementById('books-container');
+        const booksDropdownBtn = document.getElementById('books-dropdown-btn');
+        const booksDropdown = document.getElementById('books-dropdown');
 
         // Dynamically generate country checkboxes
         const countriesResponse = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/countries?select=id,name&apikey=' + API_KEY);
         const countries = await countriesResponse.json();
 
-        if (!countries || countries.length === 0) {
-            return;
+        if (countries && countries.length > 0) {
+            countries.forEach(country => {
+                const checkboxDiv = document.createElement('div');
+                checkboxDiv.className = 'country-checkbox';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `country-${country.id}`;
+                checkbox.value = country.id;
+                checkbox.name = 'country';
+
+                const label = document.createElement('label');
+                label.htmlFor = `country-${country.id}`;
+                label.textContent = country.name;
+
+                checkboxDiv.appendChild(checkbox);
+                checkboxDiv.appendChild(label);
+                countriesContainer.appendChild(checkboxDiv);
+            });
         }
 
-        countries.forEach(country => {
-        const checkboxDiv = document.createElement('div');
-        checkboxDiv.className = 'country-checkbox';
+        // Dynamically generate book checkboxes
+        const booksResponse = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/books?select=id,name&apikey=' + API_KEY);
+        const books = await booksResponse.json();
 
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = `country-${country.id}`;
-        checkbox.value = country.id;
-        checkbox.name = 'country';
+        if (books && books.length > 0) {
+            books.forEach(book => {
+                const checkboxDiv = document.createElement('div');
+                checkboxDiv.className = 'book-checkbox';
 
-        const label = document.createElement('label');
-        label.htmlFor = `country-${country.id}`;
-        label.textContent = country.name;
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `book-${book.id}`;
+                checkbox.value = book.id;
+                checkbox.name = 'book';
 
-        checkboxDiv.appendChild(checkbox);
-        checkboxDiv.appendChild(label);
-        countriesContainer.appendChild(checkboxDiv);
-    });
+                const label = document.createElement('label');
+                label.htmlFor = `book-${book.id}`;
+                label.textContent = book.name;
+
+                checkboxDiv.appendChild(checkbox);
+                checkboxDiv.appendChild(label);
+                booksContainer.appendChild(checkboxDiv);
+            });
+        }
 
     // Open modal
     filtrosBtn.addEventListener('click', () => {
@@ -80,6 +106,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         countriesDropdown.style.top = `${rect.bottom + window.scrollY}px`;
         countriesDropdown.style.left = `${rect.left + window.scrollX}px`;
         countriesDropdown.classList.toggle('show');
+        booksDropdown.classList.remove('show');
+    });
+
+    // Toggle books dropdown
+    booksDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const rect = booksDropdownBtn.getBoundingClientRect();
+        booksDropdown.style.top = `${rect.bottom + window.scrollY}px`;
+        booksDropdown.style.left = `${rect.left + window.scrollX}px`;
+        booksDropdown.classList.toggle('show');
+        countriesDropdown.classList.remove('show');
     });
 
     // Close dropdown when clicking outside
@@ -87,12 +124,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!countriesDropdownBtn.contains(e.target) && !countriesDropdown.contains(e.target)) {
             countriesDropdown.classList.remove('show');
         }
+        if (!booksDropdownBtn.contains(e.target) && !booksDropdown.contains(e.target)) {
+            booksDropdown.classList.remove('show');
+        }
     });
 
     // Close modal with X button
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
         countriesDropdown.classList.remove('show');
+        booksDropdown.classList.remove('show');
     });
 
     // Close modal with filtrar button and navigate to recipe_list
@@ -100,9 +141,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         const checkedCountries = Array.from(document.querySelectorAll('input[name="country"]:checked'))
             .map(checkbox => checkbox.value);
 
+        const checkedBooks = Array.from(document.querySelectorAll('input[name="book"]:checked'))
+            .map(checkbox => checkbox.value);
+
+        const params = new URLSearchParams();
         if (checkedCountries.length > 0) {
-            const countriesParam = checkedCountries.join(',');
-            window.location.href = `pages/recipe_list.html?countries=${encodeURIComponent(countriesParam)}`;
+            params.append('countries', checkedCountries.join(','));
+        }
+        if (checkedBooks.length > 0) {
+            params.append('books', checkedBooks.join(','));
+        }
+
+        if (params.toString()) {
+            window.location.href = `pages/recipe_list.html?${params.toString()}`;
         } else {
             modal.style.display = 'none';
         }

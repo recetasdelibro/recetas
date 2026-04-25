@@ -162,7 +162,8 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
-#countries-container {
+#countries-container,
+#books-container {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -170,7 +171,8 @@ header nav a:hover {
     padding: 10px;
 }
 
-.country-checkbox {
+.country-checkbox,
+.book-checkbox {
     margin: 0;
     display: flex;
     align-items: center;
@@ -178,16 +180,19 @@ header nav a:hover {
     padding: 5px 0;
 }
 
-.country-checkbox input[type="checkbox"] {
+.country-checkbox input[type="checkbox"],
+.book-checkbox input[type="checkbox"] {
     cursor: pointer;
 }
 
-.country-checkbox label {
+.country-checkbox label,
+.book-checkbox label {
     cursor: pointer;
     user-select: none;
 }
 
-#countries-dropdown {
+#countries-dropdown,
+#books-dropdown {
     display: none;
     position: fixed;
     min-width: 200px;
@@ -200,7 +205,8 @@ header nav a:hover {
     z-index: 1002;
 }
 
-#countries-dropdown.show {
+#countries-dropdown.show,
+#books-dropdown.show {
     display: block;
 }
 
@@ -229,7 +235,8 @@ header nav a:hover {
     text-align: center;
 }
 
-#countries-dropdown-btn {
+#countries-dropdown-btn,
+#books-dropdown-btn {
     background-color: black;
     color: var(--color-text-inverse);
     border: none;
@@ -715,7 +722,8 @@ footer {
     }
 
     .modal-content #filtrar-btn,
-    .modal-content #countries-dropdown-btn {
+    .modal-content #countries-dropdown-btn,
+    .modal-content #books-dropdown-btn {
         width: 150px !important;
         padding: 10px 20px !important;
         white-space: nowrap;

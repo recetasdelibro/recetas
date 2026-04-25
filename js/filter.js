@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const category = params.get('category')?.toLowerCase() || "";
         const countriesParam = params.get('countries') || "";
         const selectedCountries = countriesParam ? countriesParam.split(',').map(id => parseInt(id)) : [];
+        const booksParam = params.get('books') || "";
+        const selectedBooks = booksParam ? booksParam.split(',').map(id => parseInt(id)) : [];
 
         // Get current page to determine which functionality to use
         const currentPage = window.location.pathname;
@@ -97,6 +99,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             return false;
         };
 
+        // Book filtering function
+        const filterByBook = (recipe, selectedBooks) => {
+            if (selectedBooks.length === 0) return true;
+
+            // Check if recipe id_book matches any selected book ID
+            if (recipe.id_book) {
+                return selectedBooks.includes(recipe.id_book);
+            }
+            return false;
+        };
+
         if (isRecipeListPage) {
             // Update page title based on category
             const categoryTitles = {
@@ -132,7 +145,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // If we used fuzzy search, don't apply text search filter again
                 const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
                 const countryMatch = filterByCountry(r, selectedCountries);
-                return categoryMatch && searchMatch && countryMatch;
+                const bookMatch = filterByBook(r, selectedBooks);
+                return categoryMatch && searchMatch && countryMatch && bookMatch;
             });
 
             // Display results
@@ -166,7 +180,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // If we used fuzzy search, don't apply text search filter again
                 const searchMatch = (searchTerm && searchTerm.length >= 3) ? true : filterBySearch(r, searchTerm);
                 const countryMatch = filterByCountry(r, selectedCountries);
-                return categoryMatch && searchMatch && countryMatch;
+                const bookMatch = filterByBook(r, selectedBooks);
+                return categoryMatch && searchMatch && countryMatch && bookMatch;
             });
 
             if (recipe) {

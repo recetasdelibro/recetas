@@ -445,6 +445,31 @@ footer {
     min-width: 0;
 }
 
+.recipe-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.recipe-likes {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.heart-icon-small {
+    width: 16px;
+    height: 16px;
+}
+
+.likes-count {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
 .recipe-card {
     text-decoration: none;
     color: inherit;

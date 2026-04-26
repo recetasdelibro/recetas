@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } else {
             // Regular fetch for no search or short search terms
-            const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*&apikey=${API_KEY}`);
+            const response = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=*,likes&apikey=${API_KEY}`);
             recipes = await response.json();
         }
 
@@ -157,7 +157,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <input type="hidden" class="recipe-id" value="${recipe.id}">
                         <div class="recipe-card-content">
                             <h3 class="recipe-title">${recipe.title}</h3>
-                            ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                            <div class="recipe-card-meta">
+                                ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                                <div class="recipe-likes">
+                                    <svg class="heart-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e74c3c" stroke="#e74c3c" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="likes-count">${recipe.likes !== null && recipe.likes !== undefined ? recipe.likes : 0}</span>
+                                </div>
+                            </div>
                         </div>
                         <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image" loading="lazy">
                     </a>

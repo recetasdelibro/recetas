@@ -56,6 +56,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                     footer.parentNode.insertBefore(bookElement, footer);
                 }
             }
+
+            // Handle like button click
+            const likeBtn = document.getElementById('like-btn');
+            const heartIcon = document.getElementById('heart-icon');
+            
+            if (likeBtn && heartIcon) {
+                likeBtn.addEventListener('click', () => {
+                    heartIcon.classList.toggle('liked');
+                });
+            }
         } else {
             // Handle "Nothing found"
             if (recipeContent) recipeContent.style.display = 'none';

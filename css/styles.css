@@ -701,6 +701,11 @@ footer {
         text-align: left;
     }
 
+    .recipe-card-content {
+        flex: 1;
+        min-width: 0;
+    }
+
     .recipe-card-image {
         width: 110px;
         height: 110px;
@@ -756,4 +761,51 @@ footer {
         width: 88px;
         height: 88px;
     }
+}
+
+/* Like button styles */
+.like-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+    transform: scale(1.1);
+}
+
+.like-btn:active {
+    transform: scale(0.95);
+}
+
+.heart-icon {
+    width: 32px;
+    height: 32px;
+    stroke: #e74c3c;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.heart-icon.liked {
+    fill: #e74c3c;
+    stroke: #e74c3c;
+}
+
+.like-count {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    font-weight: bold;
 }

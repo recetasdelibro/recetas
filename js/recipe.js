@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const likesResponse = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/likes?id_recipe=eq.${recipeId}&select=count&apikey=${API_KEY}`);
             const likesData = await likesResponse.json();
             console.log('Likes data for recipe', recipeId, ':', likesData);
-            const likesCount = likesData.length > 0 ? (likesData[0].count || 0) : 0;
+            let likesCount = likesData.length > 0 ? (likesData[0].count || 0) : 0;
             
             const likeCountElement = document.getElementById('like-count');
             likeCountElement.textContent = likesCount;
@@ -83,7 +83,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const likeBtn = document.getElementById('like-btn');
             if (likeBtn && heartIcon) {
                 likeBtn.addEventListener('click', async () => {
-                    if (hasLiked) {
+                    // Check current like status before each click
+                    const likeCheckResponse = await fetch(
+                        `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recipe_likes?recipe_id=eq.${recipeId}&user_identifier=eq.${userId}&select=id&apikey=${API_KEY}`
+                    );
+                    const existingLikes = await likeCheckResponse.json();
+                    const currentlyLiked = existingLikes.length > 0;
+
+                    if (currentlyLiked) {
                         // Unlike - delete from recipe_likes and decrement count
                         await fetch(
                             `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recipe_likes?recipe_id=eq.${recipeId}&user_identifier=eq.${userId}&apikey=${API_KEY}`,
@@ -91,18 +98,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                         );
                         
                         // Decrement likes count in likes table
-                        const newCount = Math.max(0, likesCount - 1);
+                        likesCount = Math.max(0, likesCount - 1);
                         await fetch(
                             `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/likes?id_recipe=eq.${recipeId}&apikey=${API_KEY}`,
                             {
                                 method: 'PATCH',
                                 headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ count: newCount })
+                                body: JSON.stringify({ count: likesCount })
                             }
                         );
                         
                         heartIcon.classList.remove('liked');
-                        likeCountElement.textContent = newCount;
+                        likeCountElement.textContent = likesCount;
                     } else {
                         // Like - insert into recipe_likes and increment count
                         await fetch(
@@ -118,18 +125,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                         );
                         
                         // Increment likes count in likes table
-                        const newCount = likesCount + 1;
+                        likesCount = likesCount + 1;
                         await fetch(
                             `https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/likes?id_recipe=eq.${recipeId}&apikey=${API_KEY}`,
                             {
                                 method: 'PATCH',
                                 headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ count: newCount })
+                                body: JSON.stringify({ count: likesCount })
                             }
                         );
                         
                         heartIcon.classList.add('liked');
-                        likeCountElement.textContent = newCount;
+                        likeCountElement.textContent = likesCount;
                     }
                 });
             }

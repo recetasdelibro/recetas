@@ -21,17 +21,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch(supabaseQuery);
         const reviews = await response.json();
 
-        // Search filtering function
-        const filterBySearch = (review, searchTerm) => {
-            if (searchTerm.length < 3) return true;
-            
-            const titleMatch = review.title.toLowerCase().includes(searchTerm);
-            const reviewMatch = review.review && review.review.some(line => 
-                line.toLowerCase().includes(searchTerm)
-            );
-            return titleMatch || reviewMatch;
-        };
-
         if (isReviewListPage) {
             // Update page title
             document.title = 'Reseñas';
@@ -40,20 +29,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 categoryTitleElement.textContent = 'Reseñas';
             }
 
-            // REVIEW LIST PAGE - Fill recipe-grid with filtered results
+            // REVIEW LIST PAGE - Fill recipe-grid with all reviews
             const recipeGrid = document.getElementById('recipe-grid');
             const messageBox = document.getElementById('no-results-message');
 
-            // Filter reviews using search function
-            const filteredReviews = reviews.filter(r => {
-                const searchMatch = filterBySearch(r, searchTerm);
-                return searchMatch;
-            });
-
-            // Display results
-            if (filteredReviews.length > 0) {
+            // Display all reviews without filtering
+            if (reviews.length > 0) {
                 messageBox.style.display = 'none';
-                recipeGrid.innerHTML = filteredReviews.map(review => `
+                recipeGrid.innerHTML = reviews.map(review => `
                     <a href="review.html?search=${review.id}" class="recipe-card" aria-label="Ver reseña de ${review.title}">
                         <input type="hidden" class="recipe-id" value="${review.id}">
                         <div class="recipe-card-content">
@@ -64,9 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 `).join('');
             } else {
                 recipeGrid.innerHTML = '';
-                messageBox.textContent = searchTerm 
-                    ? `No se encontraron reseñas con "${searchTerm}"`
-                    : 'No se encontraron reseñas.';
+                messageBox.textContent = 'No se encontraron reseñas.';
                 messageBox.style.display = 'block';
             }
 

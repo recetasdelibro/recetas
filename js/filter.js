@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             recipes = await response.json();
         }
 
+        // Fetch likes for all recipes
+        const likesResponse = await fetch(`https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/likes?select=id_recipe,count&apikey=${API_KEY}`);
+        const likesData = await likesResponse.json();
+        
+        // Create a map of recipe_id to likes count
+        const likesMap = {};
+        likesData.forEach(like => {
+            likesMap[like.id_recipe] = like.count || 0;
+        });
+
         // Category filtering function
         const filterByCategory = (recipe, category) => {
             if (!category) return true;
@@ -149,19 +159,61 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return categoryMatch && searchMatch && countryMatch && bookMatch;
             });
 
+            // Pagination setup
+            const itemsPerPage = 8;
+            const totalPages = Math.ceil(filteredRecipes.length / itemsPerPage);
+            let currentPage = parseInt(params.get('page')) || 1;
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages && totalPages > 0) currentPage = totalPages;
+
+            // Get current page items
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex);
+
             // Display results
             if (filteredRecipes.length > 0) {
                 messageBox.style.display = 'none';
-                recipeGrid.innerHTML = filteredRecipes.map(recipe => `
+                recipeGrid.innerHTML = paginatedRecipes.map(recipe => `
                     <a href="recipe.html?search=${recipe.id}" class="recipe-card ${recipe.tags && recipe.tags.includes('parrilla') ? 'parrilla' : ''}" aria-label="Ver receta de ${recipe.title}">
                         <input type="hidden" class="recipe-id" value="${recipe.id}">
                         <div class="recipe-card-content">
                             <h3 class="recipe-title">${recipe.title}</h3>
-                            ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                            <div class="recipe-card-meta">
+                                ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                                <div class="recipe-likes">
+                                    <svg class="heart-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e74c3c" stroke="#e74c3c" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="likes-count">${likesMap[recipe.id] || 0}</span>
+                                </div>
+                            </div>
                         </div>
                         <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image" loading="lazy">
                     </a>
                 `).join('');
+
+                // Add pagination controls
+                if (totalPages > 1) {
+                    const paginationContainer = document.createElement('div');
+                    paginationContainer.className = 'pagination-container';
+                    paginationContainer.innerHTML = `
+                        <button class="pagination-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}">← Anterior</button>
+                        <span class="pagination-info">${currentPage}/${totalPages}</span>
+                        <button class="pagination-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}">Siguiente →</button>
+                    `;
+                    recipeGrid.parentNode.insertBefore(paginationContainer, recipeGrid.nextSibling);
+
+                    // Add click handlers for pagination buttons
+                    paginationContainer.querySelectorAll('.pagination-btn').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const newPage = parseInt(btn.dataset.page);
+                            const newParams = new URLSearchParams(window.location.search);
+                            newParams.set('page', newPage);
+                            window.location.search = newParams.toString();
+                        });
+                    });
+                }
             } else {
                 recipeGrid.innerHTML = '';
                 messageBox.textContent = category || searchTerm 

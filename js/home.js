@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         const response = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/recetas?select=id,title,image,flag,tags&limit=8&apikey=' + API_KEY);
         const recipes = await response.json();
         
+        // Fetch likes for all recipes
+        const likesResponse = await fetch('https://hazeaoafnztxidkgdwsn.supabase.co/rest/v1/likes?select=id_recipe,count&apikey=' + API_KEY);
+        const likesData = await likesResponse.json();
+        
+        // Create a map of recipe_id to likes count
+        const likesMap = {};
+        likesData.forEach(like => {
+            likesMap[like.id_recipe] = like.count || 0;
+        });
+        
         // Get 8 random recipes from the limited set
         function getRandomRecipes(recipes, count) {
             const shuffled = [...recipes].sort(() => Math.random() - 0.5);
@@ -23,7 +33,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <input type="hidden" class="recipe-id" value="${recipe.id}">
                     <div class="recipe-card-content">
                         <h3 class="recipe-title">${recipe.title}</h3>
-                        ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                        <div class="recipe-card-meta">
+                            ${recipe.flag ? `<img src="${recipe.flag}" alt="Flag" class="recipe-flag">` : ''}
+                            <div class="recipe-likes">
+                                <svg class="heart-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e74c3c" stroke="#e74c3c" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                                <span class="likes-count">${likesMap[recipe.id] || 0}</span>
+                            </div>
+                        </div>
                     </div>
                     <img src="${recipe.image}" alt="${recipe.title}" class="recipe-card-image" loading="lazy">
                 </a>

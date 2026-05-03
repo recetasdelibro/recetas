@@ -871,3 +871,16 @@ footer {
     color: var(--color-text);
     font-weight: 500;
 }
+
+/* Ingredient links */
+.ingredient-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.ingredient-link:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}

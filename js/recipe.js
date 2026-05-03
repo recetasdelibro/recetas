@@ -37,7 +37,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const qty = i.quantity ? `${i.quantity} ` : '';
                 const unit = i.unit ? `${i.unit} ` : '';
                 const notes = i.notes ? ` (${i.notes})` : '';
-                return `<li>${qty}${unit}${i.name}${notes}</li>`;
+                
+                // Check if ingredient has id_recipe property and create link if it does
+                let ingredientName = i.name;
+                if (i.id_recipe) {
+                    ingredientName = `<a href="recipe.html?search=${i.id_recipe}" class="ingredient-link">${i.name}</a>`;
+                }
+                
+                return `<li>${qty}${unit}${ingredientName}${notes}</li>`;
             }).join('');
 
             const procedureList = document.getElementById('procedure-list');
